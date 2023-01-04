@@ -1,0 +1,118 @@
+2022-12-27 18:42:59,985 - src - INFO - Setting random seed to 0
+2022-12-27 18:43:08,510 - __main__ - INFO - Acquiring dataset for key uspto_mit
+2022-12-27 18:43:08,510 - src.datasets.uspto_mit - INFO - Downloading raw data from https://github.com/wengong-jin/nips17-rexgen/raw/master/USPTO/data.zip
+2022-12-27 18:43:56,953 - src - INFO - Setting random seed to 0
+2022-12-27 18:43:57,435 - __main__ - INFO - Acquiring dataset for key uspto_mit
+2022-12-27 18:43:57,435 - src.datasets.uspto_mit - INFO - Downloading raw data from https://github.com/wengong-jin/nips17-rexgen/raw/master/USPTO/data.zip
+2022-12-27 18:44:22,934 - src - INFO - Setting random seed to 0
+2022-12-27 18:44:23,392 - __main__ - INFO - Acquiring dataset for key uspto_50k
+2022-12-27 18:45:52,227 - src.datasets.uspto_50k - INFO - Saving 'x' to ./data/uspto_50k/x.tsv
+2022-12-27 18:45:52,664 - src.datasets.uspto_50k - INFO - Saving ./data/uspto_50k/metadata.tsv
+2022-12-27 18:45:52,780 - src.datasets.uspto_50k - INFO - Saving default split to ./data/uspto_50k/default_split.csv
+2022-12-27 18:45:52,973 - __main__ - INFO - Dataset for key uspto_50k acquired successfully!
+2022-12-30 21:04:11,999 - src - INFO - Setting random seed to 0
+2022-12-30 21:04:13,027 - __main__ - INFO - Acquiring dataset for key uspto_mit
+2022-12-30 21:04:13,027 - src.datasets.uspto_mit - INFO - Downloading raw data from https://github.com/wengong-jin/nips17-rexgen/raw/master/USPTO/data.zip
+2022-12-30 21:04:20,459 - src.datasets.uspto_mit - INFO - Files downloaded and unpacked to ./data/uspto_mit/feat
+2022-12-30 21:04:22,220 - src.datasets.uspto_mit - INFO - Saved 409035 train reactions
+2022-12-30 21:04:22,334 - src.datasets.uspto_mit - INFO - Saved 30000 valid reactions
+2022-12-30 21:04:22,487 - src.datasets.uspto_mit - INFO - Saved 40000 test reactions
+2022-12-30 21:04:22,525 - src.datasets.uspto_mit - INFO - Saving 'x' to ./data/uspto_mit/x.tsv
+2022-12-30 21:04:27,164 - src.datasets.uspto_mit - INFO - Saving ./data/uspto_mit/metadata.tsv
+2022-12-30 21:04:28,102 - src.datasets.uspto_mit - INFO - Saving default split to ./data/uspto_mit/default_split.csv
+2022-12-30 21:04:29,652 - __main__ - INFO - Dataset for key uspto_mit acquired successfully!
+2022-12-30 21:05:30,574 - src - INFO - Setting random seed to 0
+2022-12-30 21:05:31,288 - __main__ - INFO - Acquiring dataset for key uspto_full
+2022-12-30 21:05:31,288 - src.datasets.uspto_full - ERROR - Please download data files manually and put them in the following locations:
+./data/uspto_full/feat/data/US_patents_1976-Sep2016_1product_reactions_train.csv
+./data/uspto_full/feat/data/US_patents_1976-Sep2016_1product_reactions_valid.csv
+./data/uspto_full/feat/data/US_patents_1976-Sep2016_1product_reactions_test.csv
+Raw data should be found at: https://ibm.ent.box.com/v/ReactionSeq2SeqDataset
+2022-12-30 21:13:16,529 - src - INFO - Setting random seed to 0
+2022-12-30 21:13:16,977 - __main__ - INFO - Acquiring dataset for key uspto_full
+2022-12-30 21:13:16,977 - src.datasets.uspto_full - ERROR - Please download data files manually and put them in the following locations:
+./data/uspto_full/feat/data/US_patents_1976-Sep2016_1product_reactions_train.csv
+./data/uspto_full/feat/data/US_patents_1976-Sep2016_1product_reactions_valid.csv
+./data/uspto_full/feat/data/US_patents_1976-Sep2016_1product_reactions_test.csv
+Raw data should be found at: https://ibm.ent.box.com/v/ReactionSeq2SeqDataset
+2022-12-30 21:22:16,263 - src - INFO - Setting random seed to 0
+2022-12-30 21:22:16,801 - __main__ - INFO - Acquiring dataset for key uspto_full
+2022-12-31 14:22:38,208 - src - INFO - Setting random seed to 0
+2022-12-31 14:22:39,343 - __main__ - INFO - Featurizing with 'megan_16_bfs_randat' on dataset 'uspto_50k'
+2022-12-31 14:22:39,343 - src.feat.megan_graph - INFO - Loading dataset uspto_50k and default split
+2022-12-31 14:22:39,600 - src.feat.megan_graph - INFO - Found 10 unique reaction types in the dataset
+2022-12-31 14:22:39,602 - src.feat.megan_graph - INFO - Max. number of nodes: 100
+2022-12-31 14:22:39,607 - src.feat.megan_graph - INFO - Finding all possible values of atom and bond properties on 45009 reactions using 8 chunks
+2022-12-31 14:23:32,616 - src.feat.megan_graph - INFO - Found atom features: atomic_num: 16, formal_charge: 3, chiral_tag: 3, num_explicit_hs: 4, is_aromatic: 2, is_supernode: 2, is_edited: 2, is_reactant: 2
+2022-12-31 14:23:32,618 - src.feat.megan_graph - INFO - Found bond features: bond_type: 6, bond_stereo: 3, is_aromatic: 2, is_edited: 2
+2022-12-31 14:23:32,644 - src.feat.megan_graph - INFO - Featurizing 45009 reactions with 8 threads
+2022-12-31 14:23:32,644 - src.feat.megan_graph - INFO - Number of generated paths (train+valid): 50016
+2022-12-31 14:23:32,644 - src.feat.megan_graph - INFO - Upper bound for number of generated samples: 800256 (50016 * 16)
+2022-12-31 14:23:32,659 - src.feat.megan_graph - INFO - Merging featurized data from 8 chunks
+2022-12-31 14:28:54,718 - src.feat.megan_graph - INFO - Merged chunk 1 (unparsed samples: 12/5626)
+2022-12-31 14:28:59,408 - src.feat.megan_graph - INFO - Merged chunk 2 (unparsed samples: 15/5626)
+2022-12-31 14:29:00,025 - src.feat.megan_graph - INFO - Merged chunk 3 (unparsed samples: 9/5626)
+2022-12-31 14:29:00,671 - src.feat.megan_graph - INFO - Merged chunk 4 (unparsed samples: 13/5626)
+2022-12-31 14:29:01,381 - src.feat.megan_graph - INFO - Merged chunk 5 (unparsed samples: 5/5626)
+2022-12-31 14:29:02,098 - src.feat.megan_graph - INFO - Merged chunk 6 (unparsed samples: 9/5626)
+2022-12-31 14:29:02,858 - src.feat.megan_graph - INFO - Merged chunk 7 (unparsed samples: 8/5626)
+2022-12-31 14:31:26,550 - src.feat.megan_graph - INFO - Merged chunk 8 (unparsed samples: 12/5627)
+2022-12-31 14:31:26,550 - src.feat.megan_graph - INFO - Concatenating metadata
+2022-12-31 14:31:26,556 - src.feat.megan_graph - INFO - Saving found actions
+2022-12-31 14:31:29,064 - src.feat.megan_graph - INFO - Found 54 reaction actions
+2022-12-31 14:31:29,065 - src.feat.megan_graph - INFO - Number of steps: max: 16, avg: 4.292414192227218
+2022-12-31 14:31:29,065 - src.feat.megan_graph - INFO - Saving featurized data
+2022-12-31 14:31:32,775 - src.feat.megan_graph - INFO - Saved 44926/45009 reactions (99.81559243706815%)
+2022-12-31 14:31:32,776 - src.feat.megan_graph - INFO - Saved 44926 paths (avg. 1.0 paths per reaction)
+2022-12-31 14:31:32,776 - src.feat.megan_graph - INFO - Saving featurization metadata
+2022-12-31 14:31:32,843 - __main__ - INFO - Finished featurizing with 'megan_16_bfs_randat' on dataset 'uspto_50k'!
+2022-12-31 14:36:01,501 - src - INFO - Setting random seed to 0
+2022-12-31 14:40:05,346 - src - INFO - Setting random seed to 0
+2022-12-31 14:40:05,382 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 14:40:56,942 - src - INFO - Setting random seed to 0
+2022-12-31 14:40:56,975 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 14:43:36,387 - src - INFO - Setting random seed to 0
+2022-12-31 14:43:36,421 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 14:43:45,475 - src - INFO - Setting random seed to 0
+2022-12-31 14:43:45,508 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 14:45:14,986 - src - INFO - Setting random seed to 0
+2022-12-31 14:45:15,021 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 14:46:14,357 - src - INFO - Setting random seed to 0
+2022-12-31 14:46:14,391 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 14:48:10,067 - src - INFO - Setting random seed to 0
+2022-12-31 14:48:10,102 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:12:27,384 - src - INFO - Setting random seed to 0
+2022-12-31 21:15:06,741 - src - INFO - Setting random seed to 0
+2022-12-31 21:15:06,795 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:17:28,977 - src - INFO - Setting random seed to 0
+2022-12-31 21:17:29,012 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:39:03,852 - src - INFO - Setting random seed to 0
+2022-12-31 21:39:04,548 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:40:03,736 - src - INFO - Setting random seed to 0
+2022-12-31 21:40:04,857 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:41:40,748 - src - INFO - Setting random seed to 0
+2022-12-31 21:41:41,406 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:44:09,040 - src - INFO - Setting random seed to 0
+2022-12-31 21:44:09,696 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:45:48,019 - src - INFO - Setting random seed to 0
+2022-12-31 21:45:48,881 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:54:04,140 - src - INFO - Setting random seed to 0
+2022-12-31 21:54:05,419 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:54:40,597 - src - INFO - Setting random seed to 0
+2022-12-31 21:54:41,303 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:55:30,303 - src - INFO - Setting random seed to 0
+2022-12-31 21:55:31,424 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:56:44,167 - src - INFO - Setting random seed to 0
+2022-12-31 21:56:45,340 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2022-12-31 21:57:27,621 - src - INFO - Setting random seed to 0
+2022-12-31 21:57:28,784 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2023-01-01 13:00:46,084 - src - INFO - Setting random seed to 0
+2023-01-01 13:00:47,376 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2023-01-01 15:15:30,049 - src - INFO - Setting random seed to 0
+2023-01-01 15:15:31,444 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2023-01-01 15:38:13,740 - src - INFO - Setting random seed to 0
+2023-01-01 15:38:14,628 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2023-01-01 15:42:11,500 - src - INFO - Setting random seed to 0
+2023-01-01 15:42:12,140 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2023-01-01 16:07:25,239 - src - INFO - Setting random seed to 0
+2023-01-01 16:07:26,581 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin

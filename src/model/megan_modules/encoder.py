@@ -27,7 +27,7 @@ class MeganEncoder(nn.Module):
             setattr(self, f'MultiHeadGraphConv_{i + 1}', conv)
 
     def forward(self, x: dict) -> dict:
-        atom_feats = x['node_features']
+        atom_feats = x['node_features'] # What is x shape ? Is it one atom ? If yes, how is the attention made with other atoms (eq. 7)
         prev_atom_feats = atom_feats
 
         for i, conv in enumerate(self.conv_layers):

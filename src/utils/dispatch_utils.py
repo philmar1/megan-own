@@ -9,11 +9,39 @@ from contextlib import contextmanager
 from typing import Callable, Dict, List, TextIO, Optional
 
 import gin
+import wandb
 
 from src import CONFIGS_DIR, configure_logger, LOG_LEVEL
 
 logger = logging.getLogger(__name__)
 
+def get_config():
+    config = {}
+    for k, args in gin.config._CONFIG.items():
+        full_function_path = k[1]
+        function_name = full_function_path.split('.')[-1]
+        
+        for arg_name, arg_val in args.items():
+                if isinstance(arg_val, str):
+                    arg_val = '{}'.format(arg_val)
+                config['{}.{}'.format(function_name, arg_name)] = arg_val
+
+    return config
+    
+@gin.configurable()
+def init_wandb(project : str,
+               name : str,
+               id : Optional[str],
+               resume : Optional[str] = "allow") :
+    if id is None : 
+        id = wandb.util.generate_id()
+    config = get_config()
+    run = wandb.init(project=project,
+                     name=name,
+                     id=id,
+                     resume=resume,
+                     config=config)
+    return run
 
 def parse_config_file(path: str):
     gin.parse_config_file(path, skip_unknown=True)
@@ -100,6 +128,7 @@ def replace_standard_stream(stream_name, file_):
     try:
         yield
     finally:
+        
         setattr(sys, stream_name, stream)
 
 
@@ -178,7 +207,10 @@ def dispatch_configurable_command(function: Callable[[str], None]):
     configure_logger(name='', console_logging_level=LOG_LEVEL,
                      logs_dir=os.path.join(save_path, 'logs'),
                      reset=True)
-
+    
+    # TODO : add wandbinit here, after all conf is done
+    #run = init_wandb()
+    
     if int(os.environ.get('DEPLOY', 0)):
         function(save_path)
     else:

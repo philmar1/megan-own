@@ -38,3 +38,4 @@ MeganDecoder.dec_dropout = 0.0
 
 MultiHeadGraphConvLayer.att_heads = 8
 MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True

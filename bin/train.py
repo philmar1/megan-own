@@ -31,7 +31,7 @@ from src.model.utils import DumpTensorflowSummaries
 from src.model.megan import Megan
 from src.model.megan_utils import generate_batch
 from src.utils import dispatch_utils, summary, save_weights, load_state_dict
-from src.utils.dispatch_utils import save_current_config, log_current_config
+from src.utils.dispatch_utils import save_current_config, log_current_config, get_config, init_wandb
 from src.feat.megan_graph import MeganTrainingSamplesFeaturizer, get_actions_vocab_path, get_prop2oh_vocab_path
 
 logger = logging.getLogger(__name__)
@@ -93,7 +93,8 @@ def train_megan(
                   n_bond_actions=action_vocab['n_bond_actions'],
                   prop2oh=action_vocab['prop2oh']).to(device)
     summary(model)
-
+    run = init_wandb()
+    
     logger.info("Loading data...")
     data_dict = {}
 
@@ -146,6 +147,7 @@ def train_megan(
             path_i += n_paths
         min_losses = torch.cat(min_losses)
 
+        
         loss = torch.mean(min_losses)
 
         if torch.isinf(loss):
@@ -153,6 +155,8 @@ def train_megan(
 
         if loss != loss:  # this is only true for NaN in pytorch
             raise ValueError('NaN loss')
+        
+        
 
         # skip accuracy metrics if there are no positive samples in batch
         correct = ((y_pred == y_true) & y_val_one).float()
@@ -323,8 +327,11 @@ def train_megan(
         for key, val in valid_metrics.items():
             all_metrics[f'valid_{key}'] = val
 
+        
         all_metrics['lr'] = learning_rate
         tf_callback.on_epoch_end(epoch_i + 1, all_metrics)
+        
+        run.log(all_metrics) #step_acc, step_acc_hard, step_acc_easy, acc, loss, lr 
 
         valid_acc = valid_metrics['acc']
         if valid_acc > best_acc:

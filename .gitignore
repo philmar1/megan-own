@@ -1,0 +1,5 @@
+#Ignore folders
+Data/
+
+#Temporary files
+*.pyc
