@@ -3,3 +3,4 @@ Data/
 
 #Temporary files
 *.pyc
+*.sh

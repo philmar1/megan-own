@@ -1,0 +1,1 @@
+Problem at: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\src\utils\dispatch_utils.py 44 init_wandb

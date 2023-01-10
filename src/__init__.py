@@ -8,7 +8,7 @@ import numpy as np
 
 from src.utils import configure_logger
 
-os.environ['PROJECT_ROOT'] = os.getcwd() #os.path.join(os.getcwd(), '../')
+#os.environ['PROJECT_ROOT'] = os.path.join(os.getcwd(), '../') #os.getcwd()
 DATA_DIR = os.environ.get("DATA_DIR", './data')
 LOGS_DIR = os.environ.get("LOGS_DIR", './logs')
 CONFIGS_DIR = os.environ.get("CONFIG_DIR", os.path.join(os.environ['PROJECT_ROOT'], "configs"))

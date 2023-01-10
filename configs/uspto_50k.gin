@@ -42,4 +42,4 @@ MultiHeadGraphConvLayer.v2 = False
 
 init_wandb.project = "megan"
 init_wandb.name = "v1"
-init_wandb.id = "19v8rei7"
+init_wandb.id = "megan0v1"

@@ -1,0 +1,773 @@
+2023-01-07 13:08:09,207 - root - DEBUG - Logging configured!
+2023-01-07 13:08:09,207 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan0v2
+2023-01-07 13:08:09,222 - __main__ - INFO - Creating model...
+2023-01-07 13:08:10,459 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:08:10,569 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:08:10,571 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:08:12,095 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:08:13,462 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:08:13,467 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:08:13,634 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:08:13,659 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:09:14,348 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2023-01-07 13:09:14,428 - urllib3.connectionpool - DEBUG - https://o151352.ingest.sentry.io:443 "POST /api/5288891/store/ HTTP/1.1" 200 41
+2023-01-07 13:18:28,145 - root - DEBUG - Logging configured!
+2023-01-07 13:18:28,146 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 13:18:28,152 - __main__ - INFO - Creating model...
+2023-01-07 13:18:29,377 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:18:29,484 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:18:29,486 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:18:30,983 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:18:32,195 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:18:32,198 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:18:32,371 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:18:32,394 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:18:38,790 - __main__ - INFO - Loading data...
+2023-01-07 13:18:38,790 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 13:18:38,791 - __main__ - INFO - Loading data
+2023-01-07 13:18:39,648 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 13:18:39,649 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 13:19:00,761 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 222.00 MiB (GPU 0; 6.00 GiB total capacity; 5.24 GiB already allocated; 0 bytes free; 56.64 MiB cached)
+2023-01-07 13:20:20,338 - root - DEBUG - Logging configured!
+2023-01-07 13:20:20,338 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 13:20:20,345 - __main__ - INFO - Creating model...
+2023-01-07 13:20:21,566 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:20:21,672 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:20:21,673 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:20:23,184 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:20:24,521 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:20:24,528 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:20:24,689 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:20:24,713 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:20:25,885 - __main__ - INFO - Loading data...
+2023-01-07 13:20:25,886 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 13:20:25,887 - __main__ - INFO - Loading data
+2023-01-07 13:20:26,733 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 13:20:26,734 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 13:20:46,837 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 222.00 MiB (GPU 0; 6.00 GiB total capacity; 5.24 GiB already allocated; 0 bytes free; 56.64 MiB cached)
+2023-01-07 13:25:03,777 - root - DEBUG - Logging configured!
+2023-01-07 13:25:03,777 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 13:25:03,784 - __main__ - INFO - Creating model...
+2023-01-07 13:25:04,999 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:25:05,107 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:25:05,109 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:25:06,611 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:25:08,017 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:25:08,024 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:25:08,183 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:25:08,204 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:25:09,443 - __main__ - INFO - Loading data...
+2023-01-07 13:25:09,444 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 13:25:09,445 - __main__ - INFO - Loading data
+2023-01-07 13:25:10,290 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 13:25:10,291 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 13:25:30,217 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 222.00 MiB (GPU 0; 6.00 GiB total capacity; 5.24 GiB already allocated; 0 bytes free; 56.64 MiB cached)
+2023-01-07 13:27:45,883 - root - DEBUG - Logging configured!
+2023-01-07 13:27:45,883 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 13:27:45,890 - __main__ - INFO - Creating model...
+2023-01-07 13:27:47,093 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:27:47,197 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:27:47,199 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:27:48,728 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:27:49,939 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:27:49,946 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:27:50,113 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:27:50,141 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:27:51,358 - __main__ - INFO - Loading data...
+2023-01-07 13:27:51,359 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 13:27:51,360 - __main__ - INFO - Loading data
+2023-01-07 13:27:52,219 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 13:27:52,219 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 13:28:10,327 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 20.00 MiB (GPU 0; 6.00 GiB total capacity; 5.27 GiB already allocated; 0 bytes free; 32.00 MiB cached)
+2023-01-07 13:31:21,650 - root - DEBUG - Logging configured!
+2023-01-07 13:31:21,650 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 13:31:21,656 - __main__ - INFO - Creating model...
+2023-01-07 13:31:22,882 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:31:22,990 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:31:22,992 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:31:24,499 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:31:25,858 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:31:25,862 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:31:26,004 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:31:26,025 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:31:27,304 - __main__ - INFO - Loading data...
+2023-01-07 13:31:27,305 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 13:31:27,306 - __main__ - INFO - Loading data
+2023-01-07 13:31:28,164 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 13:31:28,165 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 13:31:45,892 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 166.00 MiB (GPU 0; 6.00 GiB total capacity; 5.16 GiB already allocated; 0 bytes free; 101.35 MiB cached)
+2023-01-07 13:33:02,710 - root - DEBUG - Logging configured!
+2023-01-07 13:33:02,712 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 13:33:02,717 - __main__ - INFO - Creating model...
+2023-01-07 13:33:03,925 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:33:04,033 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:33:04,035 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:33:05,545 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:33:06,870 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:33:06,873 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:33:07,032 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:33:07,060 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:33:08,289 - __main__ - INFO - Loading data...
+2023-01-07 13:33:08,290 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 13:33:08,291 - __main__ - INFO - Loading data
+2023-01-07 13:33:09,139 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 13:33:09,140 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 13:33:36,064 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 126.00 MiB (GPU 0; 6.00 GiB total capacity; 4.55 GiB already allocated; 0 bytes free; 668.46 MiB cached)
+2023-01-07 22:11:48,445 - root - DEBUG - Logging configured!
+2023-01-07 22:11:48,445 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 22:11:48,454 - __main__ - INFO - Creating model...
+2023-01-07 22:11:50,207 - __main__ - INFO - Using device: cuda:0
+2023-01-07 22:11:50,313 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 22:11:50,315 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 22:11:51,817 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 22:11:53,186 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 22:11:53,204 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 22:11:53,370 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 22:11:53,394 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 22:11:54,635 - __main__ - INFO - Loading data...
+2023-01-07 22:11:54,635 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 22:11:54,636 - __main__ - INFO - Loading data
+2023-01-07 22:11:55,492 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 22:11:55,493 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 22:12:22,277 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 126.00 MiB (GPU 0; 6.00 GiB total capacity; 4.55 GiB already allocated; 0 bytes free; 668.46 MiB cached)
+2023-01-07 22:15:02,564 - root - DEBUG - Logging configured!
+2023-01-07 22:15:02,564 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-07 22:15:02,571 - __main__ - INFO - Creating model...
+2023-01-07 22:15:03,762 - __main__ - INFO - Using device: cuda:0
+2023-01-07 22:15:03,871 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 22:15:03,873 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 22:15:05,396 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 22:15:06,708 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 22:15:06,720 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 22:15:06,872 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 22:15:06,895 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 22:15:08,136 - __main__ - INFO - Loading data...
+2023-01-07 22:15:08,136 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 22:15:08,137 - __main__ - INFO - Loading data
+2023-01-07 22:15:08,981 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 22:15:08,981 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-07 22:15:35,494 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 126.00 MiB (GPU 0; 6.00 GiB total capacity; 4.74 GiB already allocated; 0 bytes free; 583.09 MiB cached)
+2023-01-10 11:08:08,221 - root - DEBUG - Logging configured!
+2023-01-10 11:08:08,222 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-10 11:08:08,229 - __main__ - INFO - Creating model...
+2023-01-10 11:08:09,996 - __main__ - INFO - Using device: cuda:0
+2023-01-10 11:11:34,106 - root - DEBUG - Logging configured!
+2023-01-10 11:11:34,106 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-10 11:11:34,113 - __main__ - INFO - Creating model...
+2023-01-10 11:11:35,315 - __main__ - INFO - Using device: cuda:0
+2023-01-10 11:12:13,324 - root - DEBUG - Logging configured!
+2023-01-10 11:12:13,324 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-10 11:12:13,331 - __main__ - INFO - Creating model...
+2023-01-10 11:12:14,526 - __main__ - INFO - Using device: cuda:0
+2023-01-10 11:12:14,580 - src.utils.dispatch_utils - INFO - 38234.5 Kb
+2023-01-10 11:12:14,686 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-10 11:12:14,688 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-10 11:12:16,215 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 11:12:17,618 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-10 11:12:17,631 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 11:12:17,796 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-10 11:12:17,840 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-10 11:12:20,718 - __main__ - INFO - Loading data...
+2023-01-10 11:12:20,719 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-10 11:12:20,720 - __main__ - INFO - Loading data
+2023-01-10 11:12:21,584 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-10 11:12:21,584 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-10 11:12:49,400 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 126.00 MiB (GPU 0; 6.00 GiB total capacity; 4.74 GiB already allocated; 0 bytes free; 583.09 MiB cached)
+2023-01-10 11:25:09,958 - root - DEBUG - Logging configured!
+2023-01-10 11:25:09,959 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 3
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-10 11:25:09,965 - __main__ - INFO - Creating model...
+2023-01-10 11:25:11,146 - __main__ - INFO - Using device: cuda:0
+2023-01-10 11:25:11,197 - src.utils.dispatch_utils - INFO - 38234.5 Kb
+2023-01-10 11:25:11,303 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-10 11:25:11,305 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-10 11:25:12,813 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 11:25:14,145 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-10 11:25:14,159 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 11:25:14,327 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-10 11:25:14,359 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-10 11:25:15,742 - __main__ - INFO - Loading data...
+2023-01-10 11:25:15,742 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-10 11:25:15,743 - __main__ - INFO - Loading data
+2023-01-10 11:25:16,581 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-10 11:25:16,582 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-10 11:25:43,600 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 126.00 MiB (GPU 0; 6.00 GiB total capacity; 4.74 GiB already allocated; 0 bytes free; 583.09 MiB cached)
+2023-01-10 11:34:31,749 - root - DEBUG - Logging configured!
+2023-01-10 11:34:31,750 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-10 11:34:31,756 - __main__ - INFO - Creating model...
+2023-01-10 11:34:32,971 - __main__ - INFO - Using device: cuda:0
+2023-01-10 11:34:33,025 - src.utils.dispatch_utils - INFO - 50551.5 Kb
+2023-01-10 11:34:33,132 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-10 11:34:33,134 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-10 11:34:34,634 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 11:34:35,993 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-10 11:34:36,006 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 11:34:36,181 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-10 11:34:36,211 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-10 11:34:37,447 - __main__ - INFO - Loading data...
+2023-01-10 11:34:37,448 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-10 11:34:37,449 - __main__ - INFO - Loading data
+2023-01-10 11:34:38,305 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-10 11:34:38,306 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-10 11:35:37,215 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2023-01-10 11:35:37,291 - urllib3.connectionpool - DEBUG - https://o151352.ingest.sentry.io:443 "POST /api/5288891/envelope/ HTTP/1.1" 200 2
+2023-01-10 11:53:55,472 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 98.00 MiB (GPU 0; 6.00 GiB total capacity; 5.18 GiB already allocated; 0 bytes free; 125.09 MiB cached)
+2023-01-10 12:00:13,912 - root - DEBUG - Logging configured!
+2023-01-10 12:00:13,912 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan1v2
+2023-01-10 12:00:13,919 - __main__ - INFO - Creating model...
+2023-01-10 12:00:15,109 - __main__ - INFO - Using device: cuda:0
+2023-01-10 12:00:15,163 - src.utils.dispatch_utils - INFO - 38234.5 Kb
+2023-01-10 12:00:15,269 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-10 12:00:15,270 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-10 12:00:16,764 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 12:00:18,185 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-10 12:00:18,191 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-10 12:00:18,348 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-10 12:00:18,391 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-10 12:00:19,584 - __main__ - INFO - Loading data...
+2023-01-10 12:00:19,585 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-10 12:00:19,586 - __main__ - INFO - Loading data
+2023-01-10 12:00:20,433 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-10 12:00:20,434 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-10 12:01:19,356 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2023-01-10 12:01:19,435 - urllib3.connectionpool - DEBUG - https://o151352.ingest.sentry.io:443 "POST /api/5288891/envelope/ HTTP/1.1" 200 2
+2023-01-10 12:17:09,451 - __main__ - WARNING - Exception while running batch: CUDA out of memory. Tried to allocate 98.00 MiB (GPU 0; 6.00 GiB total capacity; 5.17 GiB already allocated; 0 bytes free; 91.03 MiB cached)

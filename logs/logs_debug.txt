@@ -238,3 +238,144 @@ Raw data should be found at: https://ibm.ent.box.com/v/ReactionSeq2SeqDataset
 2023-01-01 16:07:25,238 - root - DEBUG - Logging configured!
 2023-01-01 16:07:25,239 - src - INFO - Setting random seed to 0
 2023-01-01 16:07:26,581 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k.gin
+2023-01-06 14:07:33,158 - root - DEBUG - Logging configured!
+2023-01-06 14:07:33,159 - src - INFO - Setting random seed to 132435
+2023-01-06 14:07:33,640 - __main__ - INFO - Acquiring dataset for key uspto_50k
+2023-01-06 14:09:06,104 - root - DEBUG - Logging configured!
+2023-01-06 14:09:06,104 - src - INFO - Setting random seed to 132435
+2023-01-06 14:09:06,272 - __main__ - INFO - Acquiring dataset for key uspto_50k
+2023-01-06 14:09:46,192 - src.datasets.uspto_50k - INFO - Saving 'x' to C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\data\uspto_50k\x.tsv
+2023-01-06 14:09:46,643 - src.datasets.uspto_50k - INFO - Saving C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\data\uspto_50k\metadata.tsv
+2023-01-06 14:09:46,741 - src.datasets.uspto_50k - INFO - Saving default split to C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\data\uspto_50k\default_split.csv
+2023-01-06 14:09:46,845 - __main__ - INFO - Dataset for key uspto_50k acquired successfully!
+2023-01-06 14:11:24,443 - root - DEBUG - Logging configured!
+2023-01-06 14:11:24,443 - src - INFO - Setting random seed to 132435
+2023-01-06 14:11:24,580 - __main__ - INFO - Acquiring dataset for key uspto_50k
+2023-01-06 14:12:48,028 - root - DEBUG - Logging configured!
+2023-01-06 14:12:48,028 - src - INFO - Setting random seed to 132435
+2023-01-06 14:12:48,166 - __main__ - INFO - Acquiring dataset for key uspto_50k
+2023-01-06 14:37:41,171 - root - DEBUG - Logging configured!
+2023-01-06 14:37:41,171 - src - INFO - Setting random seed to 132435
+2023-01-06 14:37:41,600 - __main__ - INFO - Featurizing with 'megan_16_bfs_randat' on dataset 'uspto_50k'
+2023-01-06 14:37:41,601 - src.feat.megan_graph - INFO - Loading dataset uspto_50k and default split
+2023-01-06 14:37:41,835 - src.feat.megan_graph - INFO - Found 10 unique reaction types in the dataset
+2023-01-06 14:37:41,837 - src.feat.megan_graph - INFO - Max. number of nodes: 100
+2023-01-06 15:00:19,944 - root - DEBUG - Logging configured!
+2023-01-06 15:00:19,944 - src - INFO - Setting random seed to 132435
+2023-01-06 15:00:20,352 - __main__ - INFO - Featurizing with 'megan_16_bfs_randat' on dataset 'uspto_50k'
+2023-01-06 15:00:20,353 - src.feat.megan_graph - INFO - Loading dataset uspto_50k and default split
+2023-01-06 15:00:20,585 - src.feat.megan_graph - INFO - Found 10 unique reaction types in the dataset
+2023-01-06 15:00:20,586 - src.feat.megan_graph - INFO - Max. number of nodes: 100
+2023-01-06 15:15:01,036 - root - DEBUG - Logging configured!
+2023-01-06 15:15:01,036 - src - INFO - Setting random seed to 132435
+2023-01-06 15:15:01,445 - __main__ - INFO - Featurizing with 'megan_16_bfs_randat' on dataset 'uspto_50k'
+2023-01-06 15:15:01,446 - src.feat.megan_graph - INFO - Loading dataset uspto_50k and default split
+2023-01-06 15:15:01,671 - src.feat.megan_graph - INFO - Found 10 unique reaction types in the dataset
+2023-01-06 15:15:01,673 - src.feat.megan_graph - INFO - Max. number of nodes: 100
+2023-01-06 15:25:43,952 - root - DEBUG - Logging configured!
+2023-01-06 15:25:43,952 - src - INFO - Setting random seed to 132435
+2023-01-06 15:44:44,303 - root - DEBUG - Logging configured!
+2023-01-06 15:44:44,303 - src - INFO - Setting random seed to 132435
+2023-01-06 15:44:44,705 - __main__ - INFO - Acquiring dataset for key uspto_50k
+2023-01-06 16:36:38,438 - root - DEBUG - Logging configured!
+2023-01-06 16:36:38,438 - src - INFO - Setting random seed to 132435
+2023-01-06 16:36:38,771 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 16:43:38,518 - root - DEBUG - Logging configured!
+2023-01-06 16:43:38,518 - src - INFO - Setting random seed to 132435
+2023-01-06 16:43:38,829 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 16:46:58,753 - root - DEBUG - Logging configured!
+2023-01-06 16:46:58,753 - src - INFO - Setting random seed to 132435
+2023-01-06 16:47:00,969 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 16:50:03,168 - root - DEBUG - Logging configured!
+2023-01-06 16:50:03,168 - src - INFO - Setting random seed to 132435
+2023-01-06 16:50:04,279 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 17:25:43,536 - root - DEBUG - Logging configured!
+2023-01-06 17:25:43,536 - src - INFO - Setting random seed to 132435
+2023-01-06 17:25:44,631 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 17:27:44,403 - root - DEBUG - Logging configured!
+2023-01-06 17:27:44,403 - src - INFO - Setting random seed to 132435
+2023-01-06 17:27:45,531 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 17:28:13,149 - root - DEBUG - Logging configured!
+2023-01-06 17:28:13,149 - src - INFO - Setting random seed to 132435
+2023-01-06 17:28:14,274 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 17:47:59,961 - root - DEBUG - Logging configured!
+2023-01-06 17:47:59,962 - src - INFO - Setting random seed to 132435
+2023-01-06 17:48:01,094 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 17:55:05,177 - root - DEBUG - Logging configured!
+2023-01-06 17:55:05,177 - src - INFO - Setting random seed to 132435
+2023-01-06 17:55:06,298 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 18:01:42,404 - root - DEBUG - Logging configured!
+2023-01-06 18:01:42,404 - src - INFO - Setting random seed to 132435
+2023-01-06 18:01:43,524 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 18:07:36,990 - root - DEBUG - Logging configured!
+2023-01-06 18:07:36,991 - src - INFO - Setting random seed to 132435
+2023-01-06 18:07:38,112 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 18:09:18,004 - root - DEBUG - Logging configured!
+2023-01-06 18:09:18,005 - src - INFO - Setting random seed to 132435
+2023-01-06 18:09:19,122 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 18:25:25,459 - root - DEBUG - Logging configured!
+2023-01-06 18:25:25,460 - src - INFO - Setting random seed to 132435
+2023-01-06 18:25:27,783 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 20:51:03,681 - root - DEBUG - Logging configured!
+2023-01-06 20:51:03,681 - src - INFO - Setting random seed to 132435
+2023-01-06 20:51:05,034 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 20:53:10,136 - root - DEBUG - Logging configured!
+2023-01-06 20:53:10,137 - src - INFO - Setting random seed to 132435
+2023-01-06 20:53:11,340 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 20:55:45,052 - root - DEBUG - Logging configured!
+2023-01-06 20:55:45,053 - src - INFO - Setting random seed to 132435
+2023-01-06 20:55:46,286 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 20:59:39,697 - root - DEBUG - Logging configured!
+2023-01-06 20:59:39,697 - src - INFO - Setting random seed to 132435
+2023-01-06 20:59:40,962 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-06 21:02:55,420 - root - DEBUG - Logging configured!
+2023-01-06 21:02:55,420 - src - INFO - Setting random seed to 132435
+2023-01-06 21:02:56,662 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-07 13:08:06,792 - root - DEBUG - Logging configured!
+2023-01-07 13:08:06,792 - src - INFO - Setting random seed to 132435
+2023-01-07 13:08:09,204 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 13:17:48,078 - root - DEBUG - Logging configured!
+2023-01-07 13:17:48,078 - src - INFO - Setting random seed to 132435
+2023-01-07 13:17:49,204 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k.gin
+2023-01-07 13:18:27,033 - root - DEBUG - Logging configured!
+2023-01-07 13:18:27,033 - src - INFO - Setting random seed to 132435
+2023-01-07 13:18:28,142 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 13:20:19,213 - root - DEBUG - Logging configured!
+2023-01-07 13:20:19,213 - src - INFO - Setting random seed to 132435
+2023-01-07 13:20:20,335 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 13:25:02,670 - root - DEBUG - Logging configured!
+2023-01-07 13:25:02,671 - src - INFO - Setting random seed to 132435
+2023-01-07 13:25:03,774 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 13:27:44,773 - root - DEBUG - Logging configured!
+2023-01-07 13:27:44,773 - src - INFO - Setting random seed to 132435
+2023-01-07 13:27:45,880 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 13:31:20,535 - root - DEBUG - Logging configured!
+2023-01-07 13:31:20,535 - src - INFO - Setting random seed to 132435
+2023-01-07 13:31:21,647 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 13:33:01,600 - root - DEBUG - Logging configured!
+2023-01-07 13:33:01,600 - src - INFO - Setting random seed to 132435
+2023-01-07 13:33:02,708 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 22:11:46,838 - root - DEBUG - Logging configured!
+2023-01-07 22:11:46,839 - src - INFO - Setting random seed to 132435
+2023-01-07 22:11:48,442 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-07 22:15:01,436 - root - DEBUG - Logging configured!
+2023-01-07 22:15:01,436 - src - INFO - Setting random seed to 132435
+2023-01-07 22:15:02,561 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-10 11:08:06,690 - root - DEBUG - Logging configured!
+2023-01-10 11:08:06,691 - src - INFO - Setting random seed to 132435
+2023-01-10 11:08:08,220 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-10 11:11:32,975 - root - DEBUG - Logging configured!
+2023-01-10 11:11:32,975 - src - INFO - Setting random seed to 132435
+2023-01-10 11:11:34,103 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-10 11:12:12,196 - root - DEBUG - Logging configured!
+2023-01-10 11:12:12,196 - src - INFO - Setting random seed to 132435
+2023-01-10 11:12:13,321 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-10 11:25:08,824 - root - DEBUG - Logging configured!
+2023-01-10 11:25:08,824 - src - INFO - Setting random seed to 132435
+2023-01-10 11:25:09,956 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-10 11:34:30,613 - root - DEBUG - Logging configured!
+2023-01-10 11:34:30,613 - src - INFO - Setting random seed to 132435
+2023-01-10 11:34:31,746 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin
+2023-01-10 12:00:12,767 - root - DEBUG - Logging configured!
+2023-01-10 12:00:12,768 - src - INFO - Setting random seed to 132435
+2023-01-10 12:00:13,909 - src.utils.dispatch_utils - INFO - Parsed gin config from C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\configs\uspto_50k_v2.gin

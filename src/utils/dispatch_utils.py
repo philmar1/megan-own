@@ -9,31 +9,42 @@ from contextlib import contextmanager
 from typing import Callable, Dict, List, TextIO, Optional
 
 import gin
+import gc
+import torch
 import wandb
 
 from src import CONFIGS_DIR, configure_logger, LOG_LEVEL
 
 logger = logging.getLogger(__name__)
 
+
+def show_cache():
+   gc.collect()
+   torch.cuda.empty_cache()
+   torch.cuda.synchronize()
+   logger.info(f"{torch.cuda.memory_allocated()/1024} Kb")
+
+
 def get_config():
     config = {}
     for k, args in gin.config._CONFIG.items():
         full_function_path = k[1]
         function_name = full_function_path.split('.')[-1]
-        
+       
         for arg_name, arg_val in args.items():
                 if isinstance(arg_val, str):
                     arg_val = '{}'.format(arg_val)
                 config['{}.{}'.format(function_name, arg_name)] = arg_val
 
     return config
-    
+ 
+
 @gin.configurable()
-def init_wandb(project : str,
-               name : str,
-               id : Optional[str],
-               resume : Optional[str] = "allow") :
-    if id is None : 
+def init_wandb(project: str,
+               name: str,
+               id: Optional[str],
+               resume: Optional[str] = "allow"):
+    if id is None: 
         id = wandb.util.generate_id()
     config = get_config()
     run = wandb.init(project=project,
@@ -42,6 +53,7 @@ def init_wandb(project : str,
                      resume=resume,
                      config=config)
     return run
+
 
 def parse_config_file(path: str):
     gin.parse_config_file(path, skip_unknown=True)

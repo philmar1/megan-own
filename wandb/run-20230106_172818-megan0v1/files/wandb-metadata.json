@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.6.10",
+    "heartbeatAt": "2023-01-06T16:28:19.825299",
+    "startedAt": "2023-01-06T16:28:18.676628",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "uspto_50k",
+        "models/uspto_50k"
+    ],
+    "state": "running",
+    "program": "bin/train.py",
+    "codePath": "bin\\train.py",
+    "git": {
+        "remote": "https://github.com/philmar1/megan-own.git",
+        "commit": "a5780e6b32e6a7f962f1fa35c3b250de7af9cc3e"
+    },
+    "email": null,
+    "root": "C:/Users/Marie/Documents/PhilTheBeast/Projets_IA/megan-own",
+    "host": "BeQuiet-MARIE",
+    "username": "Marie",
+    "executable": "C:\\Users\\Marie\\miniconda3\\envs\\megan\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3600.0,
+        "min": 0.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3600.0,
+            "min": 0.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "total": 930.8903160095215,
+        "used": 265.1235694885254
+    },
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2060",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 31.913421630859375
+    }
+}

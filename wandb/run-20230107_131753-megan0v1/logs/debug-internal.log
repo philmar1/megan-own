@@ -1,0 +1,147 @@
+2023-01-07 13:17:53,609 INFO    StreamThr :31844 [internal.py:wandb_internal():90] W&B internal server running at pid: 31844, started at: 2023-01-07 13:17:53.608736
+2023-01-07 13:17:53,611 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: status
+2023-01-07 13:17:53,614 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: status
+2023-01-07 13:17:53,616 INFO    WriterThread:31844 [datastore.py:open_for_write():75] open: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\run-megan0v1.wandb
+2023-01-07 13:17:53,617 DEBUG   SenderThread:31844 [sender.py:send():303] send: header
+2023-01-07 13:17:53,667 DEBUG   SenderThread:31844 [sender.py:send():303] send: run
+2023-01-07 13:17:53,676 INFO    SenderThread:31844 [sender.py:_maybe_setup_resume():594] checking resume status for None/megan/megan0v1
+2023-01-07 13:17:54,276 INFO    SenderThread:31844 [sender.py:_maybe_setup_resume():656] configured resuming with: ResumeState(resumed=True,step=47,history=46,events=2244,output=119,runtime=67183.106277,wandb_runtime=67169,summary={'_step': 46, '_wandb': {'runtime': 67169}, '_runtime': 67123.56966996193, 'train_acc': 0.9127, 'train_step_acc': 0.9774537570714952, 'valid_step_acc_easy': 0.8905475981235504, 'valid_acc': 0.4922, 'valid_loss': 0.331510658964701, 'train_step_acc_easy': 0.9884930612325667, 'train_step_acc_hard': 0.9465727637290956, 'lr': 5e-06, '_timestamp': 1673093038.698026, 'train_loss': 0.026288436501254182, 'valid_step_acc': 0.8275747332572937, 'valid_step_acc_hard': 0.6577800023376942},config={'_wandb': {'desc': None, 'value': {'t': {'1': [1, 3, 55], '2': [1, 3, 55], '3': [5, 13, 14, 16, 23], '4': '3.6.10', '5': '0.13.7', '8': [3, 5]}, 'framework': 'torch', 'start_time': 1673025932.213154, 'cli_version': '0.13.7', 'is_jupyter_run': False, 'python_version': '3.6.10', 'is_kaggle_kernel': False}}, 'init_wandb.id': {'desc': None, 'value': 'megan0v1'}, 'Megan.stateful': {'desc': None, 'value': True}, 'init_wandb.name': {'desc': None, 'value': 'v1'}, 'Megan.hidden_dim': {'desc': None, 'value': 1024}, 'MeganDecoder.n_fc': {'desc': None, 'value': 2}, 'Megan.bond_emb_dim': {'desc': None, 'value': 32}, 'init_wandb.project': {'desc': None, 'value': 'megan'}, 'Megan.n_reaction_types': {'desc': None, 'value': 10}, 'train_megan.batch_size': {'desc': None, 'value': 4}, 'Megan.atom_feature_keys': {'desc': None, 'value': ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']}, 'Megan.bond_feature_keys': {'desc': None, 'value': ['bond_type', 'bond_stereo']}, 'get_dataset.dataset_key': {'desc': None, 'value': 'uspto_50k'}, 'train_megan.start_epoch': {'desc': None, 'value': 0}, 'MeganDecoder.dec_dropout': {'desc': None, 'value': 0}, 'MeganEncoder.enc_dropout': {'desc': None, 'value': 0}, 'train_megan.max_n_epochs': {'desc': None, 'value': 200}, 'Megan.reaction_type_given': {'desc': None, 'value': False}, 'MeganDecoder.dec_residual': {'desc': None, 'value': True}, 'MeganEncoder.enc_residual': {'desc': None, 'value': True}, 'train_megan.gen_lr_factor': {'desc': None, 'value': 0.05}, 'train_megan.learning_rate': {'desc': None, 'value': 0.0001}, 'MeganDecoder.bond_atom_dim': {'desc': None, 'value': 128}, 'MultiHeadGraphConvLayer.v2': {'desc': None, 'value': False}, 'train_megan.early_stopping': {'desc': None, 'value': 16}, 'train_megan.featurizer_key': {'desc': None, 'value': 'megan_16_bfs_randat'}, 'Megan.reaction_type_emb_dim': {'desc': None, 'value': 16}, 'MeganDecoder.n_decoder_conv': {'desc': None, 'value': 2}, 'MeganEncoder.n_encoder_conv': {'desc': None, 'value': 6}, 'train_megan.gen_lr_patience': {'desc': None, 'value': 6}, 'MeganDecoder.atom_fc_hidden_dim': {'desc': None, 'value': 128}, 'MeganDecoder.bond_fc_hidden_dim': {'desc': None, 'value': 128}, 'MultiHeadGraphConvLayer.att_dim': {'desc': None, 'value': 128}, 'train_megan.megan_warmup_epochs': {'desc': None, 'value': 1}, 'MultiHeadGraphConvLayer.att_heads': {'desc': None, 'value': 8}, 'train_megan.train_samples_per_epoch': {'desc': None, 'value': 20000}, 'train_megan.valid_samples_per_epoch': {'desc': None, 'value': 5000}})
+2023-01-07 13:17:55,056 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: check_version
+2023-01-07 13:17:55,064 INFO    SenderThread:31844 [dir_watcher.py:__init__():216] watching files in: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files
+2023-01-07 13:17:55,065 INFO    SenderThread:31844 [sender.py:_start_run_threads():931] run started: megan0v1 with start time 1673026690.501439
+2023-01-07 13:17:55,065 DEBUG   SenderThread:31844 [sender.py:send():303] send: summary
+2023-01-07 13:17:55,065 INFO    SenderThread:31844 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-07 13:17:55,066 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: check_version
+2023-01-07 13:17:55,241 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: run_start
+2023-01-07 13:17:55,265 DEBUG   HandlerThread:31844 [system_info.py:__init__():31] System info init
+2023-01-07 13:17:55,265 DEBUG   HandlerThread:31844 [system_info.py:__init__():46] System info init done
+2023-01-07 13:17:55,265 INFO    HandlerThread:31844 [system_monitor.py:start():150] Starting system monitor
+2023-01-07 13:17:55,265 INFO    SystemMonitor:31844 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-07 13:17:55,269 INFO    SystemMonitor:31844 [interfaces.py:start():168] Started cpu
+2023-01-07 13:17:55,270 INFO    SystemMonitor:31844 [interfaces.py:start():168] Started disk
+2023-01-07 13:17:55,270 INFO    SystemMonitor:31844 [interfaces.py:start():168] Started gpu
+2023-01-07 13:17:55,271 INFO    SystemMonitor:31844 [interfaces.py:start():168] Started memory
+2023-01-07 13:17:55,281 INFO    SystemMonitor:31844 [interfaces.py:start():168] Started network
+2023-01-07 13:17:55,343 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-07 13:17:55,343 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: stop_status
+2023-01-07 13:17:55,539 DEBUG   SenderThread:31844 [sender.py:send():303] send: telemetry
+2023-01-07 13:17:56,068 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\wandb-summary.json
+2023-01-07 13:17:57,080 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_created():275] file/dir created: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\output.log
+2023-01-07 13:17:59,097 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\output.log
+2023-01-07 13:18:01,120 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\output.log
+2023-01-07 13:18:02,114 DEBUG   SenderThread:31844 [sender.py:send():303] send: exit
+2023-01-07 13:18:02,115 INFO    SenderThread:31844 [sender.py:send_exit():442] handling exit code: 255
+2023-01-07 13:18:02,115 INFO    SenderThread:31844 [sender.py:send_exit():444] handling runtime: 67175
+2023-01-07 13:18:02,116 INFO    SenderThread:31844 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-07 13:18:02,116 INFO    SenderThread:31844 [sender.py:send_exit():450] send defer
+2023-01-07 13:18:02,117 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:02,117 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-07 13:18:02,117 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:02,117 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-07 13:18:02,117 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 1
+2023-01-07 13:18:02,118 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:02,118 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-07 13:18:02,118 INFO    HandlerThread:31844 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-07 13:18:02,118 DEBUG   SystemMonitor:31844 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-07 13:18:02,119 INFO    HandlerThread:31844 [interfaces.py:finish():175] Joined cpu
+2023-01-07 13:18:02,119 DEBUG   SystemMonitor:31844 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-07 13:18:02,125 INFO    HandlerThread:31844 [interfaces.py:finish():175] Joined disk
+2023-01-07 13:18:02,126 DEBUG   SystemMonitor:31844 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-07 13:18:02,139 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\wandb-summary.json
+2023-01-07 13:18:02,157 INFO    HandlerThread:31844 [interfaces.py:finish():175] Joined gpu
+2023-01-07 13:18:02,157 INFO    HandlerThread:31844 [interfaces.py:finish():175] Joined memory
+2023-01-07 13:18:02,157 INFO    HandlerThread:31844 [interfaces.py:finish():175] Joined network
+2023-01-07 13:18:02,157 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:02,157 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-07 13:18:02,157 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 2
+2023-01-07 13:18:02,158 DEBUG   SenderThread:31844 [sender.py:send():303] send: stats
+2023-01-07 13:18:02,158 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:02,158 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-07 13:18:02,159 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:02,159 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-07 13:18:02,159 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 3
+2023-01-07 13:18:02,159 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:02,159 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-07 13:18:02,159 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:02,159 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-07 13:18:02,159 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 4
+2023-01-07 13:18:02,160 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:02,160 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-07 13:18:02,160 DEBUG   SenderThread:31844 [sender.py:send():303] send: summary
+2023-01-07 13:18:02,161 INFO    SenderThread:31844 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-07 13:18:02,161 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:02,161 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-07 13:18:02,161 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 5
+2023-01-07 13:18:02,162 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:02,162 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-07 13:18:02,162 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:02,162 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-07 13:18:02,373 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 6
+2023-01-07 13:18:02,374 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:02,374 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-07 13:18:02,374 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:02,374 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-07 13:18:03,141 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\wandb-summary.json
+2023-01-07 13:18:03,142 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\output.log
+2023-01-07 13:18:03,142 INFO    Thread-17 :31844 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\config.yaml
+2023-01-07 13:18:03,174 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-07 13:18:04,388 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 7
+2023-01-07 13:18:04,389 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: poll_exit
+2023-01-07 13:18:04,389 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:04,389 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-07 13:18:04,389 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:04,389 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-07 13:18:04,390 INFO    SenderThread:31844 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-07 13:18:05,157 INFO    SenderThread:31844 [dir_watcher.py:_on_file_modified():292] file/dir modified: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\output.log
+2023-01-07 13:18:05,158 INFO    SenderThread:31844 [dir_watcher.py:finish():392] scan: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files
+2023-01-07 13:18:05,158 INFO    SenderThread:31844 [dir_watcher.py:finish():406] scan save: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\config.yaml config.yaml
+2023-01-07 13:18:05,159 INFO    SenderThread:31844 [dir_watcher.py:finish():406] scan save: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\output.log output.log
+2023-01-07 13:18:05,164 INFO    SenderThread:31844 [dir_watcher.py:finish():406] scan save: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\wandb-summary.json wandb-summary.json
+2023-01-07 13:18:05,170 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 8
+2023-01-07 13:18:05,170 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:05,171 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-07 13:18:05,171 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:05,171 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-07 13:18:05,171 INFO    SenderThread:31844 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-07 13:18:05,705 INFO    Thread-21 :31844 [upload_job.py:push():143] Uploaded file C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\output.log
+2023-01-07 13:18:05,798 INFO    Thread-22 :31844 [upload_job.py:push():143] Uploaded file C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\wandb-summary.json
+2023-01-07 13:18:05,800 INFO    Thread-20 :31844 [upload_job.py:push():143] Uploaded file C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\files\config.yaml
+2023-01-07 13:18:06,009 INFO    Thread-16 :31844 [sender.py:transition_state():463] send defer: 9
+2023-01-07 13:18:06,010 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:06,011 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-07 13:18:06,011 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:06,012 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-07 13:18:06,012 INFO    SenderThread:31844 [file_pusher.py:join():173] waiting for file pusher
+2023-01-07 13:18:06,012 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 10
+2023-01-07 13:18:06,013 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:06,014 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-07 13:18:06,014 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:06,015 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-07 13:18:06,517 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 11
+2023-01-07 13:18:06,518 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:06,519 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-07 13:18:06,519 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:06,519 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-07 13:18:06,520 INFO    SenderThread:31844 [sender.py:transition_state():463] send defer: 12
+2023-01-07 13:18:06,522 DEBUG   SenderThread:31844 [sender.py:send():303] send: final
+2023-01-07 13:18:06,523 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: defer
+2023-01-07 13:18:06,523 DEBUG   SenderThread:31844 [sender.py:send():303] send: footer
+2023-01-07 13:18:06,524 INFO    HandlerThread:31844 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-07 13:18:06,525 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: defer
+2023-01-07 13:18:06,525 INFO    SenderThread:31844 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-07 13:18:06,528 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-07 13:18:06,529 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: poll_exit
+2023-01-07 13:18:06,530 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: server_info
+2023-01-07 13:18:06,532 DEBUG   SenderThread:31844 [sender.py:send_request():317] send_request: server_info
+2023-01-07 13:18:06,532 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-07 13:18:06,538 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-07 13:18:06,873 INFO    MainThread:31844 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-07 13:18:06,873 INFO    MainThread:31844 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-07 13:18:06,878 INFO    MainThread:31844 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-07 13:18:06,879 DEBUG   HandlerThread:31844 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-07 13:18:06,880 INFO    HandlerThread:31844 [handler.py:finish():814] shutting down handler
+2023-01-07 13:18:07,525 INFO    WriterThread:31844 [datastore.py:close():279] close: C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own\wandb\run-20230107_131753-megan0v1\run-megan0v1.wandb
+2023-01-07 13:18:07,884 INFO    SenderThread:31844 [sender.py:finish():1331] shutting down sender
+2023-01-07 13:18:07,885 INFO    SenderThread:31844 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-07 13:18:07,885 INFO    SenderThread:31844 [file_pusher.py:join():173] waiting for file pusher
+2023-01-07 13:18:07,893 INFO    MainThread:31844 [internal.py:handle_exit():77] Internal process exited

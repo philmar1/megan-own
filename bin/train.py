@@ -31,7 +31,7 @@ from src.model.utils import DumpTensorflowSummaries
 from src.model.megan import Megan
 from src.model.megan_utils import generate_batch
 from src.utils import dispatch_utils, summary, save_weights, load_state_dict
-from src.utils.dispatch_utils import save_current_config, log_current_config, get_config, init_wandb
+from src.utils.dispatch_utils import save_current_config, log_current_config, get_config, init_wandb, show_cache
 from src.feat.megan_graph import MeganTrainingSamplesFeaturizer, get_actions_vocab_path, get_prop2oh_vocab_path
 
 logger = logging.getLogger(__name__)
@@ -93,6 +93,8 @@ def train_megan(
                   n_bond_actions=action_vocab['n_bond_actions'],
                   prop2oh=action_vocab['prop2oh']).to(device)
     summary(model)
+    logger.info("Using device: {}".format(device))
+    show_cache()
     run = init_wandb()
     
     logger.info("Loading data...")
@@ -284,8 +286,9 @@ def train_megan(
         train_ind = train_ind & (metadata['path_i'] == 0)
         valid_ind = valid_ind & (metadata['path_i'] == 0)
 
-    train_ind = np.argwhere(train_ind).flatten()
-    valid_ind = np.argwhere(valid_ind).flatten()
+    train_ind = np.argwhere(train_ind.values).flatten()
+    valid_ind = np.argwhere(valid_ind.values).flatten()
+    
 
     logger.info(f"Training on chunk of {len(train_ind)} training samples and {len(valid_ind)} valid samples")
     if train_samples_per_epoch == -1:

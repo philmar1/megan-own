@@ -1,0 +1,781 @@
+2023-01-06 16:36:38,774 - root - DEBUG - Logging configured!
+2023-01-06 16:36:38,775 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = None
+2023-01-06 16:36:38,791 - __main__ - INFO - Creating model...
+2023-01-06 16:43:38,831 - root - DEBUG - Logging configured!
+2023-01-06 16:43:38,832 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan0v2
+2023-01-06 16:43:38,839 - __main__ - INFO - Creating model...
+2023-01-06 16:47:00,972 - root - DEBUG - Logging configured!
+2023-01-06 16:47:00,972 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan0v2
+2023-01-06 16:47:00,980 - __main__ - INFO - Creating model...
+2023-01-06 16:47:02,307 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 16:47:02,309 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 16:50:04,281 - root - DEBUG - Logging configured!
+2023-01-06 16:50:04,282 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan0v2
+2023-01-06 16:50:04,289 - __main__ - INFO - Creating model...
+2023-01-06 16:50:05,647 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 16:50:05,649 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 16:50:07,156 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 16:50:08,501 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 16:50:08,504 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 16:50:08,686 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 16:50:08,712 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 16:50:14,163 - __main__ - INFO - Loading data...
+2023-01-06 16:50:14,163 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 16:50:14,164 - __main__ - INFO - Loading data
+2023-01-06 17:25:44,634 - root - DEBUG - Logging configured!
+2023-01-06 17:25:44,634 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan0v2
+2023-01-06 17:25:44,641 - __main__ - INFO - Creating model...
+2023-01-06 17:25:44,838 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 17:25:44,840 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 17:25:46,460 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:25:47,684 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 17:25:47,687 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:25:47,843 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 17:25:47,863 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 17:25:49,173 - __main__ - INFO - Loading data...
+2023-01-06 17:25:49,174 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 17:25:49,175 - __main__ - INFO - Loading data
+2023-01-06 17:27:45,533 - root - DEBUG - Logging configured!
+2023-01-06 17:27:45,534 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v2
+init_wandb.id = megan0v2
+2023-01-06 17:27:45,541 - __main__ - INFO - Creating model...
+2023-01-06 17:27:46,930 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 17:27:46,932 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 17:27:48,426 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:27:49,759 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 17:27:49,762 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:27:49,917 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 17:27:49,938 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 17:27:56,265 - __main__ - INFO - Loading data...
+2023-01-06 17:27:56,266 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 17:27:56,267 - __main__ - INFO - Loading data
+2023-01-06 17:28:14,277 - root - DEBUG - Logging configured!
+2023-01-06 17:28:14,277 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-06 17:28:14,284 - __main__ - INFO - Creating model...
+2023-01-06 17:28:15,650 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 17:28:15,652 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 17:28:17,179 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:28:18,508 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 17:28:18,514 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:28:18,673 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 17:28:18,693 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 17:28:23,985 - __main__ - INFO - Loading data...
+2023-01-06 17:28:23,985 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 17:28:23,986 - __main__ - INFO - Loading data
+2023-01-06 17:48:01,097 - root - DEBUG - Logging configured!
+2023-01-06 17:48:01,097 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-06 17:48:01,104 - __main__ - INFO - Creating model...
+2023-01-06 17:48:02,433 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 17:48:02,434 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 17:48:03,942 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:48:05,276 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 17:48:05,283 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:48:05,454 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 17:48:05,474 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 17:48:06,718 - __main__ - INFO - Loading data...
+2023-01-06 17:48:06,718 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 17:48:06,719 - __main__ - INFO - Loading data
+2023-01-06 17:55:06,300 - root - DEBUG - Logging configured!
+2023-01-06 17:55:06,300 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = False
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-06 17:55:06,314 - __main__ - INFO - Creating model...
+2023-01-06 17:55:07,609 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 17:55:07,611 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 17:55:09,116 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:55:10,469 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 17:55:10,482 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 17:55:10,674 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 17:55:10,698 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 17:55:11,943 - __main__ - INFO - Loading data...
+2023-01-06 17:55:11,943 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 17:55:11,944 - __main__ - INFO - Loading data
+2023-01-06 18:01:43,526 - root - DEBUG - Logging configured!
+2023-01-06 18:01:43,527 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = False
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-06 18:01:43,533 - __main__ - INFO - Creating model...
+2023-01-06 18:01:44,852 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 18:01:44,854 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 18:01:46,364 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:01:47,705 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 18:01:47,710 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:01:47,866 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 18:01:47,887 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 18:01:49,221 - __main__ - INFO - Loading data...
+2023-01-06 18:01:49,221 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 18:01:49,222 - __main__ - INFO - Loading data
+2023-01-06 18:07:38,114 - root - DEBUG - Logging configured!
+2023-01-06 18:07:38,115 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = False
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-06 18:07:38,122 - __main__ - INFO - Creating model...
+2023-01-06 18:07:39,423 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 18:07:39,425 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 18:07:40,931 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:07:42,278 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 18:07:42,283 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:07:42,461 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 18:07:42,485 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 18:07:43,772 - __main__ - INFO - Loading data...
+2023-01-06 18:07:43,772 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 18:07:43,773 - __main__ - INFO - Loading data
+2023-01-06 18:09:19,124 - root - DEBUG - Logging configured!
+2023-01-06 18:09:19,125 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = False
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-06 18:09:19,132 - __main__ - INFO - Creating model...
+2023-01-06 18:09:20,429 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 18:09:20,431 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 18:09:21,969 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:09:23,302 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 18:09:23,305 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:09:23,480 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 18:09:23,503 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 18:09:24,926 - __main__ - INFO - Loading data...
+2023-01-06 18:09:24,927 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 18:09:24,927 - __main__ - INFO - Loading data
+2023-01-06 18:25:27,786 - root - DEBUG - Logging configured!
+2023-01-06 18:25:27,786 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = False
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-06 18:25:27,801 - __main__ - INFO - Creating model...
+2023-01-06 18:25:29,134 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-06 18:25:29,136 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-06 18:25:30,661 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:25:32,034 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-06 18:25:32,038 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-06 18:25:32,192 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-06 18:25:32,218 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-06 18:25:33,462 - __main__ - INFO - Loading data...
+2023-01-06 18:25:33,462 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-06 18:25:33,463 - __main__ - INFO - Loading data
+2023-01-06 18:25:34,346 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-06 18:25:34,346 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-06 18:26:33,239 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): o151352.ingest.sentry.io:443
+2023-01-06 18:26:33,340 - urllib3.connectionpool - DEBUG - https://o151352.ingest.sentry.io:443 "POST /api/5288891/envelope/ HTTP/1.1" 200 2
+2023-01-06 18:47:59,872 - __main__ - INFO - train epoch 1: step_acc=0.3546, step_acc_hard=0.1716, step_acc_easy=0.4305, acc=0.0478, loss=1.4041
+2023-01-06 18:49:53,312 - __main__ - INFO - valid epoch 1: step_acc=0.4778, step_acc_hard=0.3134, step_acc_easy=0.5467, acc=0.1416, loss=0.9009
+2023-01-06 18:49:53,370 - __main__ - INFO - Saving best model from epoch 1 to models\uspto_50k\model_best.pt (acc=0.1416)
+2023-01-06 18:49:53,476 - __main__ - INFO - Learning rate set to 0.0001 after 1 warmup epochs
+2023-01-06 19:12:17,070 - __main__ - INFO - train epoch 2: step_acc=0.6070, step_acc_hard=0.4089, step_acc_easy=0.6842, acc=0.2238, loss=0.5927
+2023-01-06 19:14:11,136 - __main__ - INFO - valid epoch 2: step_acc=0.6563, step_acc_hard=0.4137, step_acc_easy=0.7486, acc=0.2390, loss=0.4776
+2023-01-06 19:14:11,142 - __main__ - INFO - Saving best model from epoch 2 to models\uspto_50k\model_best.pt (acc=0.239)
+2023-01-06 19:36:10,569 - __main__ - INFO - train epoch 3: step_acc=0.6895, step_acc_hard=0.4686, step_acc_easy=0.7739, acc=0.2797, loss=0.4136
+2023-01-06 19:38:04,175 - __main__ - INFO - valid epoch 3: step_acc=0.7105, step_acc_hard=0.4978, step_acc_easy=0.7924, acc=0.3038, loss=0.3759
+2023-01-06 19:38:04,182 - __main__ - INFO - Saving best model from epoch 3 to models\uspto_50k\model_best.pt (acc=0.3038)
+2023-01-06 20:00:22,655 - __main__ - INFO - train epoch 4: step_acc=0.7243, step_acc_hard=0.5034, step_acc_easy=0.8061, acc=0.3115, loss=0.3478
+2023-01-06 20:02:15,772 - __main__ - INFO - valid epoch 4: step_acc=0.7414, step_acc_hard=0.5413, step_acc_easy=0.8192, acc=0.3442, loss=0.3174
+2023-01-06 20:02:15,778 - __main__ - INFO - Saving best model from epoch 4 to models\uspto_50k\model_best.pt (acc=0.3442)
+2023-01-06 20:25:12,071 - __main__ - INFO - train epoch 5: step_acc=0.7457, step_acc_hard=0.5283, step_acc_easy=0.8262, acc=0.3425, loss=0.3165
+2023-01-06 20:27:07,243 - __main__ - INFO - valid epoch 5: step_acc=0.7534, step_acc_hard=0.5458, step_acc_easy=0.8298, acc=0.3492, loss=0.3061
+2023-01-06 20:27:07,250 - __main__ - INFO - Saving best model from epoch 5 to models\uspto_50k\model_best.pt (acc=0.3492)
+2023-01-06 20:49:32,859 - __main__ - INFO - train epoch 6: step_acc=0.7607, step_acc_hard=0.5511, step_acc_easy=0.8403, acc=0.3608, loss=0.2854
+2023-01-06 20:51:33,891 - __main__ - INFO - valid epoch 6: step_acc=0.7635, step_acc_hard=0.5550, step_acc_easy=0.8426, acc=0.3648, loss=0.2917
+2023-01-06 20:51:33,898 - __main__ - INFO - Saving best model from epoch 6 to models\uspto_50k\model_best.pt (acc=0.3648)
+2023-01-06 21:14:51,620 - __main__ - INFO - train epoch 7: step_acc=0.7761, step_acc_hard=0.5726, step_acc_easy=0.8522, acc=0.3818, loss=0.2590
+2023-01-06 21:16:47,779 - __main__ - INFO - valid epoch 7: step_acc=0.7650, step_acc_hard=0.5564, step_acc_easy=0.8408, acc=0.3460, loss=0.2691
+2023-01-06 21:39:15,766 - __main__ - INFO - train epoch 8: step_acc=0.7830, step_acc_hard=0.5800, step_acc_easy=0.8587, acc=0.3915, loss=0.2498
+2023-01-06 21:41:11,284 - __main__ - INFO - valid epoch 8: step_acc=0.7820, step_acc_hard=0.6034, step_acc_easy=0.8457, acc=0.3928, loss=0.2586
+2023-01-06 21:41:11,292 - __main__ - INFO - Saving best model from epoch 8 to models\uspto_50k\model_best.pt (acc=0.3928)
+2023-01-06 22:03:39,499 - __main__ - INFO - train epoch 9: step_acc=0.7907, step_acc_hard=0.5861, step_acc_easy=0.8650, acc=0.3970, loss=0.2407
+2023-01-06 22:05:32,046 - __main__ - INFO - valid epoch 9: step_acc=0.7780, step_acc_hard=0.6002, step_acc_easy=0.8446, acc=0.3800, loss=0.2502
+2023-01-06 22:28:02,804 - __main__ - INFO - train epoch 10: step_acc=0.8012, step_acc_hard=0.6062, step_acc_easy=0.8739, acc=0.4202, loss=0.2215
+2023-01-06 22:29:56,954 - __main__ - INFO - valid epoch 10: step_acc=0.7890, step_acc_hard=0.5988, step_acc_easy=0.8608, acc=0.4062, loss=0.2510
+2023-01-06 22:29:56,960 - __main__ - INFO - Saving best model from epoch 10 to models\uspto_50k\model_best.pt (acc=0.4062)
+2023-01-06 22:52:25,186 - __main__ - INFO - train epoch 11: step_acc=0.8057, step_acc_hard=0.6139, step_acc_easy=0.8773, acc=0.4284, loss=0.2205
+2023-01-06 22:54:17,571 - __main__ - INFO - valid epoch 11: step_acc=0.7950, step_acc_hard=0.6036, step_acc_easy=0.8679, acc=0.4172, loss=0.2370
+2023-01-06 22:54:17,578 - __main__ - INFO - Saving best model from epoch 11 to models\uspto_50k\model_best.pt (acc=0.4172)
+2023-01-06 23:16:42,352 - __main__ - INFO - train epoch 12: step_acc=0.8167, step_acc_hard=0.6267, step_acc_easy=0.8864, acc=0.4505, loss=0.2062
+2023-01-06 23:18:36,141 - __main__ - INFO - valid epoch 12: step_acc=0.7990, step_acc_hard=0.6113, step_acc_easy=0.8670, acc=0.4220, loss=0.2302
+2023-01-06 23:18:36,148 - __main__ - INFO - Saving best model from epoch 12 to models\uspto_50k\model_best.pt (acc=0.422)
+2023-01-06 23:41:09,177 - __main__ - INFO - train epoch 13: step_acc=0.8198, step_acc_hard=0.6323, step_acc_easy=0.8880, acc=0.4553, loss=0.2005
+2023-01-06 23:43:01,297 - __main__ - INFO - valid epoch 13: step_acc=0.8020, step_acc_hard=0.6220, step_acc_easy=0.8680, acc=0.4382, loss=0.2232
+2023-01-06 23:43:01,303 - __main__ - INFO - Saving best model from epoch 13 to models\uspto_50k\model_best.pt (acc=0.4382)
+2023-01-07 00:05:11,511 - __main__ - INFO - train epoch 14: step_acc=0.8260, step_acc_hard=0.6524, step_acc_easy=0.8897, acc=0.4743, loss=0.1919
+2023-01-07 00:07:04,767 - __main__ - INFO - valid epoch 14: step_acc=0.8050, step_acc_hard=0.6224, step_acc_easy=0.8733, acc=0.4312, loss=0.2287
+2023-01-07 00:29:27,150 - __main__ - INFO - train epoch 15: step_acc=0.8283, step_acc_hard=0.6544, step_acc_easy=0.8926, acc=0.4743, loss=0.1852
+2023-01-07 00:31:19,497 - __main__ - INFO - valid epoch 15: step_acc=0.8024, step_acc_hard=0.6286, step_acc_easy=0.8675, acc=0.4364, loss=0.2307
+2023-01-07 00:53:47,372 - __main__ - INFO - train epoch 16: step_acc=0.8350, step_acc_hard=0.6603, step_acc_easy=0.8988, acc=0.4864, loss=0.1821
+2023-01-07 00:55:40,511 - __main__ - INFO - valid epoch 16: step_acc=0.8158, step_acc_hard=0.6588, step_acc_easy=0.8741, acc=0.4554, loss=0.2152
+2023-01-07 00:55:40,518 - __main__ - INFO - Saving best model from epoch 16 to models\uspto_50k\model_best.pt (acc=0.4554)
+2023-01-07 01:17:58,763 - __main__ - INFO - train epoch 17: step_acc=0.8423, step_acc_hard=0.6785, step_acc_easy=0.9012, acc=0.5009, loss=0.1707
+2023-01-07 01:19:52,172 - __main__ - INFO - valid epoch 17: step_acc=0.8069, step_acc_hard=0.6313, step_acc_easy=0.8722, acc=0.4338, loss=0.2266
+2023-01-07 01:42:05,185 - __main__ - INFO - train epoch 18: step_acc=0.8453, step_acc_hard=0.6812, step_acc_easy=0.9052, acc=0.5146, loss=0.1674
+2023-01-07 01:44:00,432 - __main__ - INFO - valid epoch 18: step_acc=0.8048, step_acc_hard=0.6131, step_acc_easy=0.8732, acc=0.4276, loss=0.2260
+2023-01-07 02:06:31,717 - __main__ - INFO - train epoch 19: step_acc=0.8499, step_acc_hard=0.6916, step_acc_easy=0.9070, acc=0.5215, loss=0.1598
+2023-01-07 02:08:24,339 - __main__ - INFO - valid epoch 19: step_acc=0.8133, step_acc_hard=0.6508, step_acc_easy=0.8710, acc=0.4448, loss=0.2190
+2023-01-07 02:30:49,786 - __main__ - INFO - train epoch 20: step_acc=0.8586, step_acc_hard=0.7080, step_acc_easy=0.9129, acc=0.5409, loss=0.1536
+2023-01-07 02:32:40,631 - __main__ - INFO - valid epoch 20: step_acc=0.8164, step_acc_hard=0.6458, step_acc_easy=0.8794, acc=0.4622, loss=0.2156
+2023-01-07 02:32:40,638 - __main__ - INFO - Saving best model from epoch 20 to models\uspto_50k\model_best.pt (acc=0.4622)
+2023-01-07 02:54:58,437 - __main__ - INFO - train epoch 21: step_acc=0.8595, step_acc_hard=0.7121, step_acc_easy=0.9132, acc=0.5464, loss=0.1501
+2023-01-07 02:56:48,801 - __main__ - INFO - valid epoch 21: step_acc=0.8142, step_acc_hard=0.6372, step_acc_easy=0.8802, acc=0.4522, loss=0.2208
+2023-01-07 03:19:14,879 - __main__ - INFO - train epoch 22: step_acc=0.8644, step_acc_hard=0.7162, step_acc_easy=0.9183, acc=0.5561, loss=0.1456
+2023-01-07 03:21:05,650 - __main__ - INFO - valid epoch 22: step_acc=0.8153, step_acc_hard=0.6401, step_acc_easy=0.8826, acc=0.4666, loss=0.2265
+2023-01-07 03:21:05,657 - __main__ - INFO - Saving best model from epoch 22 to models\uspto_50k\model_best.pt (acc=0.4666)
+2023-01-07 03:43:29,199 - __main__ - INFO - train epoch 23: step_acc=0.8676, step_acc_hard=0.7284, step_acc_easy=0.9189, acc=0.5699, loss=0.1416
+2023-01-07 03:45:22,170 - __main__ - INFO - valid epoch 23: step_acc=0.8211, step_acc_hard=0.6433, step_acc_easy=0.8844, acc=0.4684, loss=0.2164
+2023-01-07 03:45:22,177 - __main__ - INFO - Saving best model from epoch 23 to models\uspto_50k\model_best.pt (acc=0.4684)
+2023-01-07 04:07:47,653 - __main__ - INFO - train epoch 24: step_acc=0.8731, step_acc_hard=0.7420, step_acc_easy=0.9209, acc=0.5827, loss=0.1329
+2023-01-07 04:09:39,412 - __main__ - INFO - valid epoch 24: step_acc=0.8191, step_acc_hard=0.6452, step_acc_easy=0.8806, acc=0.4638, loss=0.2330
+2023-01-07 04:32:01,522 - __main__ - INFO - train epoch 25: step_acc=0.8758, step_acc_hard=0.7450, step_acc_easy=0.9232, acc=0.5923, loss=0.1305
+2023-01-07 04:33:55,023 - __main__ - INFO - valid epoch 25: step_acc=0.8165, step_acc_hard=0.6476, step_acc_easy=0.8791, acc=0.4576, loss=0.2452
+2023-01-07 04:56:16,732 - __main__ - INFO - train epoch 26: step_acc=0.8829, step_acc_hard=0.7602, step_acc_easy=0.9278, acc=0.6080, loss=0.1261
+2023-01-07 04:58:10,339 - __main__ - INFO - valid epoch 26: step_acc=0.8223, step_acc_hard=0.6656, step_acc_easy=0.8783, acc=0.4756, loss=0.2266
+2023-01-07 04:58:10,346 - __main__ - INFO - Saving best model from epoch 26 to models\uspto_50k\model_best.pt (acc=0.4756)
+2023-01-07 05:20:32,246 - __main__ - INFO - train epoch 27: step_acc=0.8853, step_acc_hard=0.7634, step_acc_easy=0.9300, acc=0.6155, loss=0.1220
+2023-01-07 05:22:25,159 - __main__ - INFO - valid epoch 27: step_acc=0.8150, step_acc_hard=0.6492, step_acc_easy=0.8752, acc=0.4626, loss=0.2373
+2023-01-07 05:44:45,793 - __main__ - INFO - train epoch 28: step_acc=0.8895, step_acc_hard=0.7712, step_acc_easy=0.9326, acc=0.6262, loss=0.1170
+2023-01-07 05:46:39,736 - __main__ - INFO - valid epoch 28: step_acc=0.8209, step_acc_hard=0.6390, step_acc_easy=0.8868, acc=0.4598, loss=0.2434
+2023-01-07 06:09:05,936 - __main__ - INFO - train epoch 29: step_acc=0.8922, step_acc_hard=0.7742, step_acc_easy=0.9353, acc=0.6353, loss=0.1134
+2023-01-07 06:10:57,593 - __main__ - INFO - valid epoch 29: step_acc=0.8164, step_acc_hard=0.6414, step_acc_easy=0.8840, acc=0.4600, loss=0.2446
+2023-01-07 06:33:35,310 - __main__ - INFO - train epoch 30: step_acc=0.8990, step_acc_hard=0.7878, step_acc_easy=0.9396, acc=0.6526, loss=0.1070
+2023-01-07 06:35:28,983 - __main__ - INFO - valid epoch 30: step_acc=0.8272, step_acc_hard=0.6530, step_acc_easy=0.8903, acc=0.4774, loss=0.2435
+2023-01-07 06:35:28,990 - __main__ - INFO - Saving best model from epoch 30 to models\uspto_50k\model_best.pt (acc=0.4774)
+2023-01-07 06:57:45,405 - __main__ - INFO - train epoch 31: step_acc=0.9019, step_acc_hard=0.7933, step_acc_easy=0.9414, acc=0.6608, loss=0.1043
+2023-01-07 06:59:38,469 - __main__ - INFO - valid epoch 31: step_acc=0.8212, step_acc_hard=0.6478, step_acc_easy=0.8827, acc=0.4706, loss=0.2424
+2023-01-07 07:21:59,221 - __main__ - INFO - train epoch 32: step_acc=0.9044, step_acc_hard=0.8011, step_acc_easy=0.9417, acc=0.6709, loss=0.0995
+2023-01-07 07:23:53,033 - __main__ - INFO - valid epoch 32: step_acc=0.8237, step_acc_hard=0.6657, step_acc_easy=0.8804, acc=0.4798, loss=0.2440
+2023-01-07 07:23:53,040 - __main__ - INFO - Saving best model from epoch 32 to models\uspto_50k\model_best.pt (acc=0.4798)
+2023-01-07 07:46:01,700 - __main__ - INFO - train epoch 33: step_acc=0.9072, step_acc_hard=0.8062, step_acc_easy=0.9438, acc=0.6813, loss=0.0970
+2023-01-07 07:47:55,579 - __main__ - INFO - valid epoch 33: step_acc=0.8230, step_acc_hard=0.6578, step_acc_easy=0.8818, acc=0.4730, loss=0.2477
+2023-01-07 08:10:16,063 - __main__ - INFO - train epoch 34: step_acc=0.9131, step_acc_hard=0.8163, step_acc_easy=0.9483, acc=0.6936, loss=0.0928
+2023-01-07 08:12:07,519 - __main__ - INFO - valid epoch 34: step_acc=0.8186, step_acc_hard=0.6628, step_acc_easy=0.8762, acc=0.4654, loss=0.2718
+2023-01-07 08:34:30,891 - __main__ - INFO - train epoch 35: step_acc=0.9141, step_acc_hard=0.8209, step_acc_easy=0.9481, acc=0.7006, loss=0.0908
+2023-01-07 08:36:22,917 - __main__ - INFO - valid epoch 35: step_acc=0.8176, step_acc_hard=0.6498, step_acc_easy=0.8800, acc=0.4548, loss=0.2751
+2023-01-07 08:58:49,933 - __main__ - INFO - train epoch 36: step_acc=0.9201, step_acc_hard=0.8340, step_acc_easy=0.9512, acc=0.7147, loss=0.0846
+2023-01-07 09:00:42,037 - __main__ - INFO - valid epoch 36: step_acc=0.8205, step_acc_hard=0.6534, step_acc_easy=0.8811, acc=0.4666, loss=0.2660
+2023-01-07 09:23:02,155 - __main__ - INFO - train epoch 37: step_acc=0.9226, step_acc_hard=0.8363, step_acc_easy=0.9537, acc=0.7279, loss=0.0811
+2023-01-07 09:24:54,411 - __main__ - INFO - valid epoch 37: step_acc=0.8143, step_acc_hard=0.6422, step_acc_easy=0.8777, acc=0.4530, loss=0.2752
+2023-01-07 09:47:24,422 - __main__ - INFO - train epoch 38: step_acc=0.9245, step_acc_hard=0.8395, step_acc_easy=0.9547, acc=0.7308, loss=0.0801
+2023-01-07 09:49:15,479 - __main__ - INFO - valid epoch 38: step_acc=0.8203, step_acc_hard=0.6624, step_acc_easy=0.8789, acc=0.4754, loss=0.2694
+2023-01-07 10:11:48,383 - __main__ - INFO - train epoch 39: step_acc=0.9253, step_acc_hard=0.8425, step_acc_easy=0.9552, acc=0.7350, loss=0.0775
+2023-01-07 10:13:40,938 - __main__ - INFO - valid epoch 39: step_acc=0.8189, step_acc_hard=0.6551, step_acc_easy=0.8836, acc=0.4646, loss=0.2829
+2023-01-07 10:13:40,945 - __main__ - INFO - Changing Learning Rate to 5e-06
+2023-01-07 10:36:16,640 - __main__ - INFO - train epoch 40: step_acc=0.9447, step_acc_hard=0.8833, step_acc_easy=0.9669, acc=0.7981, loss=0.0589
+2023-01-07 10:38:07,559 - __main__ - INFO - valid epoch 40: step_acc=0.8244, step_acc_hard=0.6639, step_acc_easy=0.8844, acc=0.4752, loss=0.2780
+2023-01-07 11:00:30,414 - __main__ - INFO - train epoch 41: step_acc=0.9563, step_acc_hard=0.9058, step_acc_easy=0.9748, acc=0.8393, loss=0.0466
+2023-01-07 11:02:23,635 - __main__ - INFO - valid epoch 41: step_acc=0.8294, step_acc_hard=0.6685, step_acc_easy=0.8893, acc=0.4916, loss=0.2917
+2023-01-07 11:02:23,641 - __main__ - INFO - Saving best model from epoch 41 to models\uspto_50k\model_best.pt (acc=0.4916)
+2023-01-07 11:24:55,397 - __main__ - INFO - train epoch 42: step_acc=0.9634, step_acc_hard=0.9199, step_acc_easy=0.9792, acc=0.8634, loss=0.0397
+2023-01-07 11:26:47,312 - __main__ - INFO - valid epoch 42: step_acc=0.8356, step_acc_hard=0.6772, step_acc_easy=0.8934, acc=0.5066, loss=0.2749
+2023-01-07 11:26:47,318 - __main__ - INFO - Saving best model from epoch 42 to models\uspto_50k\model_best.pt (acc=0.5066)
+2023-01-07 11:49:07,479 - __main__ - INFO - train epoch 43: step_acc=0.9676, step_acc_hard=0.9261, step_acc_easy=0.9824, acc=0.8785, loss=0.0367
+2023-01-07 11:51:02,141 - __main__ - INFO - valid epoch 43: step_acc=0.8275, step_acc_hard=0.6512, step_acc_easy=0.8934, acc=0.4848, loss=0.3009
+2023-01-07 12:13:37,211 - __main__ - INFO - train epoch 44: step_acc=0.9720, step_acc_hard=0.9363, step_acc_easy=0.9846, acc=0.8919, loss=0.0323
+2023-01-07 12:15:32,172 - __main__ - INFO - valid epoch 44: step_acc=0.8230, step_acc_hard=0.6532, step_acc_easy=0.8859, acc=0.4774, loss=0.3298
+2023-01-07 12:37:49,937 - __main__ - INFO - train epoch 45: step_acc=0.9741, step_acc_hard=0.9419, step_acc_easy=0.9857, acc=0.9012, loss=0.0293
+2023-01-07 12:39:43,202 - __main__ - INFO - valid epoch 45: step_acc=0.8291, step_acc_hard=0.6733, step_acc_easy=0.8859, acc=0.4938, loss=0.3195
+2023-01-07 13:02:04,676 - __main__ - INFO - train epoch 46: step_acc=0.9775, step_acc_hard=0.9466, step_acc_easy=0.9885, acc=0.9127, loss=0.0263
+2023-01-07 13:03:58,691 - __main__ - INFO - valid epoch 46: step_acc=0.8276, step_acc_hard=0.6578, step_acc_easy=0.8905, acc=0.4922, loss=0.3315
+2023-01-07 13:17:49,207 - root - DEBUG - Logging configured!
+2023-01-07 13:17:49,207 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 20000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 4
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 6
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.0
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.0
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = False
+init_wandb.project = megan
+init_wandb.name = v1
+init_wandb.id = megan0v1
+2023-01-07 13:17:49,214 - __main__ - INFO - Creating model...
+2023-01-07 13:17:50,414 - __main__ - INFO - Using device: cuda:0
+2023-01-07 13:17:50,518 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'Le fichier spécifié est introuvable', None, 2, None)
+2023-01-07 13:17:50,520 - git.cmd - DEBUG - Popen(['git', 'rev-parse', '--show-toplevel'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=None)
+2023-01-07 13:17:52,032 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:17:53,412 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 568
+2023-01-07 13:17:53,419 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.wandb.ai:443
+2023-01-07 13:17:53,580 - urllib3.connectionpool - DEBUG - https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 339
+2023-01-07 13:17:53,613 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Marie\Documents\PhilTheBeast\Projets_IA\megan-own, universal_newlines=False, shell=None, istream=<valid stream>)
+2023-01-07 13:17:55,344 - __main__ - INFO - Loading data...
+2023-01-07 13:17:55,345 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-07 13:17:55,424 - __main__ - INFO - Resuming training after 46 epochs
+2023-01-07 13:17:55,458 - __main__ - INFO - Resuming training with LR=0.000005 epochs
+2023-01-07 13:17:55,458 - __main__ - INFO - Loading data
+2023-01-07 13:17:56,327 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-07 13:17:56,327 - __main__ - INFO - Starting training on epoch 47 with Learning Rate=5e-06 (0 warmup epochs)

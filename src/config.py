@@ -2,7 +2,8 @@
 """
 Configuration of datasets and featurizers and splits
 """
-
+import sys
+sys.path.append('..\\')
 from src import N_JOBS
 from src.feat import ReactionFeaturizer
 from src.datasets import Dataset
