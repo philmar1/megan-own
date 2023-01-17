@@ -1,0 +1,181 @@
+2023-01-10 19:44:48,003 INFO    StreamThr :25609 [internal.py:wandb_internal():90] W&B internal server running at pid: 25609, started at: 2023-01-10 19:44:48.001863
+2023-01-10 19:44:48,005 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: status
+2023-01-10 19:44:48,006 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: status
+2023-01-10 19:44:48,009 INFO    WriterThread:25609 [datastore.py:open_for_write():75] open: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/run-trash000.wandb
+2023-01-10 19:44:48,010 DEBUG   SenderThread:25609 [sender.py:send():303] send: header
+2023-01-10 19:44:48,032 DEBUG   SenderThread:25609 [sender.py:send():303] send: run
+2023-01-10 19:44:48,041 INFO    SenderThread:25609 [sender.py:_maybe_setup_resume():594] checking resume status for None/megan/trash000
+2023-01-10 19:44:49,350 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: check_version
+2023-01-10 19:44:49,352 INFO    SenderThread:25609 [dir_watcher.py:__init__():216] watching files in: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files
+2023-01-10 19:44:49,352 INFO    SenderThread:25609 [sender.py:_start_run_threads():931] run started: trash000 with start time 1673376287.998549
+2023-01-10 19:44:49,353 DEBUG   SenderThread:25609 [sender.py:send():303] send: summary
+2023-01-10 19:44:49,353 INFO    SenderThread:25609 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-10 19:44:49,353 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: check_version
+2023-01-10 19:44:49,539 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: run_start
+2023-01-10 19:44:49,543 DEBUG   HandlerThread:25609 [system_info.py:__init__():31] System info init
+2023-01-10 19:44:49,543 DEBUG   HandlerThread:25609 [system_info.py:__init__():46] System info init done
+2023-01-10 19:44:49,544 INFO    HandlerThread:25609 [system_monitor.py:start():150] Starting system monitor
+2023-01-10 19:44:49,544 INFO    SystemMonitor:25609 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-10 19:44:49,544 INFO    HandlerThread:25609 [system_monitor.py:probe():171] Collecting system info
+2023-01-10 19:44:49,546 INFO    SystemMonitor:25609 [interfaces.py:start():168] Started cpu
+2023-01-10 19:44:49,547 DEBUG   HandlerThread:25609 [system_info.py:probe():195] Probing system
+2023-01-10 19:44:49,547 INFO    SystemMonitor:25609 [interfaces.py:start():168] Started disk
+2023-01-10 19:44:49,548 INFO    SystemMonitor:25609 [interfaces.py:start():168] Started memory
+2023-01-10 19:44:49,549 INFO    SystemMonitor:25609 [interfaces.py:start():168] Started network
+2023-01-10 19:44:49,550 DEBUG   HandlerThread:25609 [system_info.py:_probe_git():180] Probing git
+2023-01-10 19:44:49,584 DEBUG   HandlerThread:25609 [system_info.py:_probe_git():188] Probing git done
+2023-01-10 19:44:49,585 DEBUG   HandlerThread:25609 [system_info.py:probe():241] Probing system done
+2023-01-10 19:44:49,585 DEBUG   HandlerThread:25609 [system_monitor.py:probe():180] {'os': 'Darwin-21.6.0-x86_64-i386-64bit', 'python': '3.6.10', 'heartbeatAt': '2023-01-10T18:44:49.547811', 'startedAt': '2023-01-10T18:44:47.975159', 'docker': None, 'cuda': None, 'args': ('uspto_50k_v2', 'models/uspto_50k_v2', '--train_samples_per_epoch', '1000', '--max_n_epochs', '3'), 'state': 'running', 'program': 'bin/train.py', 'codePath': 'bin/train.py', 'git': {'remote': 'https://github.com/philmar1/megan-own', 'commit': '9c1612396762e57bc821b09c61fc2ac3621284e5'}, 'email': 'phil-mar@live.fr', 'root': '/Users/philippemartin/Documents/projets_IA/Drug Discovery/megan', 'host': 'macbook-pro-de-philippe.home', 'username': 'philippemartin', 'executable': '/Users/philippemartin/opt/miniconda3/envs/megan/bin/python', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2000, 'min': 2000, 'max': 2000}, 'cpu_freq_per_core': [{'current': 2000, 'min': 2000, 'max': 2000}], 'disk': {'total': 465.62699127197266, 'used': 290.70007705688477}, 'memory': {'total': 16.0}}
+2023-01-10 19:44:49,585 INFO    HandlerThread:25609 [system_monitor.py:probe():181] Finished collecting system info
+2023-01-10 19:44:49,585 INFO    HandlerThread:25609 [system_monitor.py:probe():184] Publishing system info
+2023-01-10 19:44:49,585 DEBUG   HandlerThread:25609 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-01-10 19:44:49,586 DEBUG   HandlerThread:25609 [system_info.py:_save_pip():67] Saving pip packages done
+2023-01-10 19:44:49,586 DEBUG   HandlerThread:25609 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-01-10 19:44:50,357 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/wandb-summary.json
+2023-01-10 19:44:50,358 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/requirements.txt
+2023-01-10 19:44:50,359 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/conda-environment.yaml
+2023-01-10 19:44:53,337 DEBUG   HandlerThread:25609 [system_info.py:_save_conda():86] Saving conda packages done
+2023-01-10 19:44:53,338 INFO    HandlerThread:25609 [system_monitor.py:probe():186] Finished publishing system info
+2023-01-10 19:44:53,367 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/conda-environment.yaml
+2023-01-10 19:44:53,367 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/wandb-metadata.json
+2023-01-10 19:44:53,386 DEBUG   SenderThread:25609 [sender.py:send():303] send: files
+2023-01-10 19:44:53,386 INFO    SenderThread:25609 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-01-10 19:44:53,394 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 19:44:53,394 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 19:44:53,686 DEBUG   SenderThread:25609 [sender.py:send():303] send: telemetry
+2023-01-10 19:44:54,205 INFO    Thread-16 :25609 [upload_job.py:push():143] Uploaded file /var/folders/t7/y2tmln916t7g7k9ncs4lhhfc0000gn/T/tmpk05fidk1wandb/jkvl589f-wandb-metadata.json
+2023-01-10 19:44:54,371 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:44:56,377 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:44:58,378 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:04,390 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:06,396 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:08,401 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:08,688 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-10 19:45:08,688 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: stop_status
+2023-01-10 19:45:10,404 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:14,414 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:16,419 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:16,835 DEBUG   SenderThread:25609 [sender.py:send():303] send: exit
+2023-01-10 19:45:16,835 INFO    SenderThread:25609 [sender.py:send_exit():442] handling exit code: 255
+2023-01-10 19:45:16,836 INFO    SenderThread:25609 [sender.py:send_exit():444] handling runtime: 27
+2023-01-10 19:45:16,837 INFO    SenderThread:25609 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-10 19:45:16,837 INFO    SenderThread:25609 [sender.py:send_exit():450] send defer
+2023-01-10 19:45:16,837 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:16,837 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 0
+2023-01-10 19:45:16,837 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:16,837 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 0
+2023-01-10 19:45:16,837 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 1
+2023-01-10 19:45:16,837 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:16,838 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 1
+2023-01-10 19:45:16,838 INFO    HandlerThread:25609 [system_monitor.py:finish():160] Stopping system monitor
+2023-01-10 19:45:16,847 DEBUG   SystemMonitor:25609 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-10 19:45:16,848 DEBUG   SystemMonitor:25609 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-01-10 19:45:16,848 DEBUG   SystemMonitor:25609 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-01-10 19:45:16,849 INFO    HandlerThread:25609 [interfaces.py:finish():175] Joined cpu
+2023-01-10 19:45:16,849 INFO    HandlerThread:25609 [interfaces.py:finish():175] Joined disk
+2023-01-10 19:45:16,849 INFO    HandlerThread:25609 [interfaces.py:finish():175] Joined memory
+2023-01-10 19:45:16,849 INFO    HandlerThread:25609 [interfaces.py:finish():175] Joined network
+2023-01-10 19:45:16,849 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:16,850 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 1
+2023-01-10 19:45:16,850 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 2
+2023-01-10 19:45:16,850 DEBUG   SenderThread:25609 [sender.py:send():303] send: stats
+2023-01-10 19:45:16,850 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:16,850 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 2
+2023-01-10 19:45:16,851 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:16,851 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 2
+2023-01-10 19:45:16,851 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 3
+2023-01-10 19:45:16,851 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:16,851 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 3
+2023-01-10 19:45:16,851 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:16,851 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 3
+2023-01-10 19:45:16,851 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 4
+2023-01-10 19:45:16,852 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:16,852 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 4
+2023-01-10 19:45:16,852 DEBUG   SenderThread:25609 [sender.py:send():303] send: summary
+2023-01-10 19:45:16,852 INFO    SenderThread:25609 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-10 19:45:16,853 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:16,853 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 4
+2023-01-10 19:45:16,853 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 5
+2023-01-10 19:45:16,853 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:16,853 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 5
+2023-01-10 19:45:16,853 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:16,853 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 5
+2023-01-10 19:45:17,070 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 6
+2023-01-10 19:45:17,070 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:17,070 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 6
+2023-01-10 19:45:17,071 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:17,071 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 6
+2023-01-10 19:45:17,425 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/wandb-summary.json
+2023-01-10 19:45:17,426 INFO    Thread-13 :25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/config.yaml
+2023-01-10 19:45:17,840 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 19:45:18,376 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 7
+2023-01-10 19:45:18,377 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 19:45:18,378 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:18,380 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 7
+2023-01-10 19:45:18,381 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:18,381 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 7
+2023-01-10 19:45:18,381 INFO    SenderThread:25609 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-01-10 19:45:18,430 INFO    SenderThread:25609 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:18,430 INFO    SenderThread:25609 [dir_watcher.py:finish():392] scan: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files
+2023-01-10 19:45:18,431 INFO    SenderThread:25609 [dir_watcher.py:finish():406] scan save: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/requirements.txt requirements.txt
+2023-01-10 19:45:18,431 INFO    SenderThread:25609 [dir_watcher.py:finish():406] scan save: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log output.log
+2023-01-10 19:45:18,437 INFO    SenderThread:25609 [dir_watcher.py:finish():406] scan save: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/config.yaml config.yaml
+2023-01-10 19:45:18,437 INFO    SenderThread:25609 [dir_watcher.py:finish():406] scan save: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/wandb-summary.json wandb-summary.json
+2023-01-10 19:45:18,442 INFO    SenderThread:25609 [dir_watcher.py:finish():406] scan save: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/conda-environment.yaml conda-environment.yaml
+2023-01-10 19:45:18,450 INFO    SenderThread:25609 [dir_watcher.py:finish():406] scan save: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/wandb-metadata.json wandb-metadata.json
+2023-01-10 19:45:18,450 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 8
+2023-01-10 19:45:18,452 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:18,453 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 8
+2023-01-10 19:45:18,453 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:18,453 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 8
+2023-01-10 19:45:18,453 INFO    SenderThread:25609 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-10 19:45:18,846 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 19:45:18,846 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 19:45:19,346 INFO    Thread-20 :25609 [upload_job.py:push():143] Uploaded file /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/wandb-summary.json
+2023-01-10 19:45:19,350 INFO    Thread-18 :25609 [upload_job.py:push():143] Uploaded file /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/output.log
+2023-01-10 19:45:19,353 INFO    Thread-19 :25609 [upload_job.py:push():143] Uploaded file /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/config.yaml
+2023-01-10 19:45:19,357 INFO    Thread-17 :25609 [upload_job.py:push():143] Uploaded file /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/requirements.txt
+2023-01-10 19:45:19,378 INFO    Thread-21 :25609 [upload_job.py:push():143] Uploaded file /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/files/conda-environment.yaml
+2023-01-10 19:45:19,583 INFO    Thread-12 :25609 [sender.py:transition_state():463] send defer: 9
+2023-01-10 19:45:19,585 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:19,585 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 9
+2023-01-10 19:45:19,586 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:19,586 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 9
+2023-01-10 19:45:19,586 INFO    SenderThread:25609 [file_pusher.py:join():173] waiting for file pusher
+2023-01-10 19:45:19,586 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 10
+2023-01-10 19:45:19,587 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:19,587 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 10
+2023-01-10 19:45:19,588 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:19,588 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 10
+2023-01-10 19:45:19,852 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 19:45:20,563 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 11
+2023-01-10 19:45:20,563 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 19:45:20,564 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:20,565 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 11
+2023-01-10 19:45:20,565 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:20,566 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 11
+2023-01-10 19:45:20,566 INFO    SenderThread:25609 [sender.py:transition_state():463] send defer: 12
+2023-01-10 19:45:20,568 DEBUG   SenderThread:25609 [sender.py:send():303] send: final
+2023-01-10 19:45:20,568 DEBUG   SenderThread:25609 [sender.py:send():303] send: footer
+2023-01-10 19:45:20,568 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: defer
+2023-01-10 19:45:20,568 INFO    HandlerThread:25609 [handler.py:handle_request_defer():162] handle defer: 12
+2023-01-10 19:45:20,569 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: defer
+2023-01-10 19:45:20,569 INFO    SenderThread:25609 [sender.py:send_request_defer():459] handle sender defer: 12
+2023-01-10 19:45:20,571 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 19:45:20,571 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 19:45:20,573 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: poll_exit
+2023-01-10 19:45:20,574 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: poll_exit
+2023-01-10 19:45:20,575 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: server_info
+2023-01-10 19:45:20,576 DEBUG   SenderThread:25609 [sender.py:send_request():317] send_request: server_info
+2023-01-10 19:45:20,580 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: get_summary
+2023-01-10 19:45:20,583 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: sampled_history
+2023-01-10 19:45:21,399 INFO    MainThread:25609 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2023-01-10 19:45:21,400 INFO    MainThread:25609 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2023-01-10 19:45:21,400 INFO    MainThread:25609 [wandb_run.py:_footer_sync_info():3364] logging synced files
+2023-01-10 19:45:21,401 DEBUG   HandlerThread:25609 [handler.py:handle_request():139] handle_request: shutdown
+2023-01-10 19:45:21,401 INFO    HandlerThread:25609 [handler.py:finish():814] shutting down handler
+2023-01-10 19:45:21,573 INFO    WriterThread:25609 [datastore.py:close():279] close: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230110_194447-trash000/run-trash000.wandb
+2023-01-10 19:45:22,404 INFO    SenderThread:25609 [sender.py:finish():1331] shutting down sender
+2023-01-10 19:45:22,405 INFO    SenderThread:25609 [file_pusher.py:finish():168] shutting down file pusher
+2023-01-10 19:45:22,405 INFO    SenderThread:25609 [file_pusher.py:join():173] waiting for file pusher
+2023-01-10 19:45:22,905 INFO    MainThread:25609 [internal.py:handle_exit():77] Internal process exited

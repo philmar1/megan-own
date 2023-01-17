@@ -94,8 +94,10 @@ def train_megan(
                   prop2oh=action_vocab['prop2oh']).to(device)
     summary(model)
     logger.info("Using device: {}".format(device))
-    show_cache()
+    
     run = init_wandb()
+    if device=='cuda:0':
+        show_cache()
     
     logger.info("Loading data...")
     data_dict = {}
@@ -289,7 +291,7 @@ def train_megan(
     train_ind = np.argwhere(train_ind.values).flatten()
     valid_ind = np.argwhere(valid_ind.values).flatten()
     
-
+    
     logger.info(f"Training on chunk of {len(train_ind)} training samples and {len(valid_ind)} valid samples")
     if train_samples_per_epoch == -1:
         train_samples_per_epoch = len(train_ind)

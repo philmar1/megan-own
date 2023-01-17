@@ -220,9 +220,6 @@ def dispatch_configurable_command(function: Callable[[str], None]):
                      logs_dir=os.path.join(save_path, 'logs'),
                      reset=True)
     
-    # TODO : add wandbinit here, after all conf is done
-    #run = init_wandb()
-    
     if int(os.environ.get('DEPLOY', 0)):
         function(save_path)
     else:

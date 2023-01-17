@@ -41,5 +41,5 @@ MultiHeadGraphConvLayer.att_dim = 128
 MultiHeadGraphConvLayer.v2 = True
 
 init_wandb.project = "megan"
-init_wandb.name = "v2"
-init_wandb.id = "megan1v2"
+init_wandb.name = "trash"
+init_wandb.id = "trash000"

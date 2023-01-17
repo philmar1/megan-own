@@ -2,3 +2,35 @@ download torch==1.3.1 :
     C:\Users\Marie\miniconda3\envs\megan\Scripts\pip.exe install install torch==1.3.1 -f https://download.pytorch.org/whl/torch_stable.html
 download torchtext==0.8.0 :
     C:\Users\Marie\miniconda3\envs\megan\Scripts\pip.exe install install torchtext==0.8.0 -f https://download.pytorch.org/whl/torchtext/
+
+
+MacOS : 
+to debug a file :
+ - create a launch.json that includes 
+ - add args in form of List
+ - in Python Debug Console, run the sh file using : source env.sh 
+
+
+## Memory management : (see https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_summary)
+
+Model v2: 37.334MB
+loaded_data : 
+    - loaded_data['atom'] : 56 bytes
+    - loaded_data['bond'] : 56 bytes
+    - loaded_data['reaction_metada'] : 13 MB
+
+batch (batch_size=2) : 
+    - using getsizeof() : 648 bytes
+    - using a.element_size() * a.nelement() for each tensor a (see https://discuss.pytorch.org/t/how-to-know-the-memory-allocated-for-a-tensor-on-gpu/28537/2) : 
+        - node_features 18432
+        - node_mask 2304
+        - adj 331776
+        - adj_mask 110592
+        - target 2653056
+        - atom_action_mask 54144
+        - bond_action_mask 387072
+
+batch = dict(node_features, adj, target, some masks)
+batch['node_features'] : [batch_size, 3, n_atoms_max_in_batch, 8]
+batch['adj'] : [batch_size, 3, n_atoms_max_in_batch, n_atoms_max_in_batch, 8]
+batch['node_features'] : [batch_size, 3, 110 544]

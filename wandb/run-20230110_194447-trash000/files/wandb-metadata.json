@@ -1,0 +1,49 @@
+{
+    "os": "Darwin-21.6.0-x86_64-i386-64bit",
+    "python": "3.6.10",
+    "heartbeatAt": "2023-01-10T18:44:49.547811",
+    "startedAt": "2023-01-10T18:44:47.975159",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "uspto_50k_v2",
+        "models/uspto_50k_v2",
+        "--train_samples_per_epoch",
+        "1000",
+        "--max_n_epochs",
+        "3"
+    ],
+    "state": "running",
+    "program": "bin/train.py",
+    "codePath": "bin/train.py",
+    "git": {
+        "remote": "https://github.com/philmar1/megan-own",
+        "commit": "9c1612396762e57bc821b09c61fc2ac3621284e5"
+    },
+    "email": "phil-mar@live.fr",
+    "root": "/Users/philippemartin/Documents/projets_IA/Drug Discovery/megan",
+    "host": "macbook-pro-de-philippe.home",
+    "username": "philippemartin",
+    "executable": "/Users/philippemartin/opt/miniconda3/envs/megan/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2000,
+        "min": 2000,
+        "max": 2000
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000,
+            "min": 2000,
+            "max": 2000
+        }
+    ],
+    "disk": {
+        "total": 465.62699127197266,
+        "used": 290.70007705688477
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

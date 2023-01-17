@@ -1,0 +1,511 @@
+2023-01-13 16:37:12,062 INFO    StreamThr :55967 [internal.py:wandb_internal():90] W&B internal server running at pid: 55967, started at: 2023-01-13 16:37:12.061558
+2023-01-13 16:37:12,072 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: status
+2023-01-13 16:37:12,073 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: status
+2023-01-13 16:37:12,077 DEBUG   SenderThread:55967 [sender.py:send():303] send: header
+2023-01-13 16:37:12,078 INFO    WriterThread:55967 [datastore.py:open_for_write():75] open: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230113_163712-trash000/run-trash000.wandb
+2023-01-13 16:37:12,097 DEBUG   SenderThread:55967 [sender.py:send():303] send: run
+2023-01-13 16:37:12,123 INFO    SenderThread:55967 [sender.py:_maybe_setup_resume():594] checking resume status for None/megan/trash000
+2023-01-13 16:37:12,762 INFO    SenderThread:55967 [sender.py:_maybe_setup_resume():656] configured resuming with: ResumeState(resumed=True,step=1,history=0,events=79,output=2,runtime=2410.815296,wandb_runtime=None,summary={},config={'_wandb': {'desc': None, 'value': {'t': {'1': [1, 3, 55], '2': [1, 3, 55], '3': [5, 13, 14, 16, 23], '4': '3.6.10', '5': '0.13.7', '8': [5]}, 'framework': 'torch', 'start_time': 1673621821.072037, 'cli_version': '0.13.7', 'is_jupyter_run': False, 'python_version': '3.6.10', 'is_kaggle_kernel': False}}, 'init_wandb.id': {'desc': None, 'value': 'trash000'}, 'Megan.stateful': {'desc': None, 'value': True}, 'init_wandb.name': {'desc': None, 'value': 'trash'}, 'Megan.hidden_dim': {'desc': None, 'value': 1024}, 'MeganDecoder.n_fc': {'desc': None, 'value': 2}, 'Megan.bond_emb_dim': {'desc': None, 'value': 32}, 'init_wandb.project': {'desc': None, 'value': 'megan'}, 'Megan.n_reaction_types': {'desc': None, 'value': 10}, 'train_megan.batch_size': {'desc': None, 'value': 2}, 'Megan.atom_feature_keys': {'desc': None, 'value': ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']}, 'Megan.bond_feature_keys': {'desc': None, 'value': ['bond_type', 'bond_stereo']}, 'get_dataset.dataset_key': {'desc': None, 'value': 'uspto_50k'}, 'train_megan.start_epoch': {'desc': None, 'value': 0}, 'MeganDecoder.dec_dropout': {'desc': None, 'value': 0.3}, 'MeganEncoder.enc_dropout': {'desc': None, 'value': 0.3}, 'train_megan.max_n_epochs': {'desc': None, 'value': 200}, 'Megan.reaction_type_given': {'desc': None, 'value': False}, 'MeganDecoder.dec_residual': {'desc': None, 'value': True}, 'MeganEncoder.enc_residual': {'desc': None, 'value': True}, 'train_megan.gen_lr_factor': {'desc': None, 'value': 0.05}, 'train_megan.learning_rate': {'desc': None, 'value': 0.0001}, 'MeganDecoder.bond_atom_dim': {'desc': None, 'value': 128}, 'MultiHeadGraphConvLayer.v2': {'desc': None, 'value': True}, 'train_megan.early_stopping': {'desc': None, 'value': 16}, 'train_megan.featurizer_key': {'desc': None, 'value': 'megan_16_bfs_randat'}, 'Megan.reaction_type_emb_dim': {'desc': None, 'value': 16}, 'MeganDecoder.n_decoder_conv': {'desc': None, 'value': 2}, 'MeganEncoder.n_encoder_conv': {'desc': None, 'value': 4}, 'train_megan.gen_lr_patience': {'desc': None, 'value': 6}, 'MeganDecoder.atom_fc_hidden_dim': {'desc': None, 'value': 128}, 'MeganDecoder.bond_fc_hidden_dim': {'desc': None, 'value': 128}, 'MultiHeadGraphConvLayer.att_dim': {'desc': None, 'value': 128}, 'train_megan.megan_warmup_epochs': {'desc': None, 'value': 1}, 'MultiHeadGraphConvLayer.att_heads': {'desc': None, 'value': 8}, 'train_megan.train_samples_per_epoch': {'desc': None, 'value': 10000}, 'train_megan.valid_samples_per_epoch': {'desc': None, 'value': 5000}})
+2023-01-13 16:37:13,509 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: check_version
+2023-01-13 16:37:13,517 INFO    SenderThread:55967 [dir_watcher.py:__init__():216] watching files in: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230113_163712-trash000/files
+2023-01-13 16:37:13,519 INFO    SenderThread:55967 [sender.py:_start_run_threads():931] run started: trash000 with start time 1673621821.237187
+2023-01-13 16:37:13,519 DEBUG   SenderThread:55967 [sender.py:send():303] send: summary
+2023-01-13 16:37:13,520 INFO    SenderThread:55967 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-01-13 16:37:13,521 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: check_version
+2023-01-13 16:37:13,734 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: run_start
+2023-01-13 16:37:13,736 DEBUG   HandlerThread:55967 [system_info.py:__init__():31] System info init
+2023-01-13 16:37:13,737 DEBUG   HandlerThread:55967 [system_info.py:__init__():46] System info init done
+2023-01-13 16:37:13,737 INFO    HandlerThread:55967 [system_monitor.py:start():150] Starting system monitor
+2023-01-13 16:37:13,739 INFO    SystemMonitor:55967 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-01-13 16:37:13,740 INFO    SystemMonitor:55967 [interfaces.py:start():168] Started cpu
+2023-01-13 16:37:13,744 INFO    SystemMonitor:55967 [interfaces.py:start():168] Started disk
+2023-01-13 16:37:13,746 INFO    SystemMonitor:55967 [interfaces.py:start():168] Started memory
+2023-01-13 16:37:13,748 INFO    SystemMonitor:55967 [interfaces.py:start():168] Started network
+2023-01-13 16:37:13,836 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:37:13,837 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:37:14,292 DEBUG   SenderThread:55967 [sender.py:send():303] send: telemetry
+2023-01-13 16:37:14,536 INFO    Thread-19 :55967 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230113_163712-trash000/files/wandb-summary.json
+2023-01-13 16:37:29,307 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:37:29,308 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:37:43,661 INFO    Thread-19 :55967 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230113_163712-trash000/files/config.yaml
+2023-01-13 16:37:44,864 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:37:44,865 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:38:00,133 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:38:00,134 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:38:13,752 DEBUG   SystemMonitor:55967 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-01-13 16:38:13,756 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:38:15,692 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:38:15,693 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:38:31,029 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:38:31,030 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:38:43,762 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:38:46,448 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:38:46,449 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:39:01,817 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:39:01,818 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:39:13,766 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:39:17,260 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:39:17,262 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:39:32,965 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:39:32,966 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:39:43,771 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:39:48,318 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:39:48,318 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:40:03,610 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:40:03,612 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:40:13,772 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:40:19,284 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:40:19,285 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:40:34,751 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:40:34,753 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:40:43,773 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:40:50,224 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:40:50,225 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:41:05,516 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:41:05,517 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:41:13,778 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:41:20,955 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:41:20,956 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:41:36,370 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:41:36,371 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:41:43,783 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:41:51,858 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:41:51,859 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:42:07,237 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:42:07,238 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:42:13,786 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:42:22,532 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:42:22,533 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:42:37,940 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:42:37,941 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:42:43,791 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:42:53,238 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:42:53,238 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:43:08,626 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:43:08,627 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:43:13,797 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:43:24,226 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:43:24,227 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:43:39,689 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:43:39,690 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:43:43,797 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:43:55,255 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:43:55,256 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:44:10,703 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:44:10,703 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:44:13,799 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:44:26,076 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:44:26,077 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:44:41,761 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:44:41,762 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:44:43,803 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:44:57,055 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:44:57,056 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:45:12,569 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:45:12,569 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:45:13,806 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:45:28,032 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:45:28,033 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:45:43,517 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:45:43,517 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:45:43,869 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:45:58,883 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:45:58,884 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:46:13,816 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:46:14,302 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:46:14,302 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:46:29,659 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:46:29,661 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:46:43,820 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:46:45,024 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:46:45,025 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:47:00,524 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:47:00,527 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:47:13,823 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:47:15,838 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:47:15,840 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:47:31,256 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:47:31,257 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:47:43,827 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:47:46,559 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:47:46,560 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:48:01,987 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:48:01,988 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:48:13,830 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:48:17,280 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:48:17,282 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:48:32,628 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:48:32,629 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:48:43,835 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:48:48,229 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:48:48,230 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:49:03,513 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:49:03,514 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:49:13,842 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:49:18,841 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:49:18,842 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:49:34,311 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:49:34,315 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:49:43,851 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:49:49,655 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:49:49,656 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:50:05,128 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:50:05,129 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:50:13,861 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:50:20,649 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:50:20,650 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:50:36,269 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:50:36,272 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:50:43,865 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:50:51,545 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:50:51,546 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:51:06,826 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:51:06,826 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:51:13,866 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:51:22,120 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:51:22,121 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:51:37,699 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:51:37,700 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:51:43,872 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:51:53,176 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:51:53,177 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:52:08,646 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:52:08,647 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:52:13,876 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:52:23,933 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:52:23,934 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:52:39,255 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:52:39,256 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:52:43,881 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:52:54,813 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:52:54,814 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:53:10,154 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:53:10,156 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:53:13,884 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:53:25,446 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:53:25,447 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:53:40,719 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:53:40,720 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:53:43,886 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:53:56,641 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:53:56,641 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:54:11,869 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:54:11,871 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:54:13,890 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:54:27,084 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:54:27,086 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:54:42,361 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:54:42,364 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:54:43,894 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:54:57,756 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:54:57,757 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:55:13,036 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:55:13,037 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:55:13,901 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:55:28,291 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:55:28,292 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:55:43,617 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:55:43,618 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:55:43,905 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:55:58,887 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:55:58,888 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:56:13,913 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:56:14,192 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:56:14,193 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:56:29,701 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:56:29,702 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:56:43,917 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:56:44,998 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:56:44,999 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:57:00,257 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:57:00,258 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:57:13,922 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:57:15,515 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:57:15,517 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:57:30,781 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:57:30,782 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:57:43,925 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:57:46,017 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:57:46,017 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:57:56,510 INFO    Thread-19 :55967 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230113_163712-trash000/files/output.log
+2023-01-13 16:57:58,520 INFO    Thread-19 :55967 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230113_163712-trash000/files/output.log
+2023-01-13 16:58:01,269 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:58:01,271 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:58:13,927 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:58:16,560 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:58:16,560 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:58:31,838 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:58:31,838 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:58:43,935 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:58:47,114 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:58:47,115 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:59:02,422 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:59:02,424 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:59:13,938 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:59:17,692 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:59:17,693 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:59:32,993 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:59:32,994 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 16:59:43,944 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 16:59:48,260 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 16:59:48,261 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:00:03,924 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:00:03,925 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:00:13,949 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:00:19,209 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:00:19,211 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:00:34,524 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:00:34,538 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:00:43,957 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:00:49,817 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:00:49,818 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:01:05,105 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:01:05,106 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:01:13,963 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:01:20,341 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:01:20,341 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:01:35,609 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:01:35,610 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:01:43,971 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:01:50,929 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:01:50,930 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:02:06,211 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:02:06,212 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:02:13,976 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:02:21,496 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:02:21,497 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:02:36,773 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:02:36,774 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:02:43,982 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:02:52,057 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:02:52,070 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:03:07,321 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:03:07,322 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:03:13,987 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:03:22,831 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:03:22,831 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:03:38,078 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:03:38,078 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:03:43,992 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:03:53,383 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:03:53,384 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:04:08,646 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:04:08,647 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:04:14,001 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:04:24,128 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:04:24,128 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:04:39,380 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:04:39,381 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:04:44,009 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:04:54,673 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:04:54,674 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:05:09,938 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:05:09,938 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:05:14,024 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:05:25,221 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:05:25,223 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:05:40,477 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:05:40,478 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:05:44,027 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:05:55,825 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:05:55,826 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:06:11,101 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:06:11,102 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:06:14,033 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:06:26,394 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:06:26,395 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:06:41,858 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:06:41,858 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:06:44,044 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:06:57,155 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:06:57,156 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:07:12,422 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:07:12,423 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:07:14,047 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:07:27,735 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:07:27,736 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:07:43,033 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:07:43,034 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:07:44,052 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:07:58,336 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:07:58,336 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:08:13,654 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:08:13,655 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:08:14,057 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:08:28,960 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:08:28,960 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:48:55,692 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:48:57,299 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:48:57,304 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:49:01,064 ERROR   SenderThread:55967 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff124e7bc88>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/adapters.py", line 450, in send
+    timeout=timeout
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff124e7bc88>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/sdk/internal/internal_api.py", line 209, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff124e7bc88>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2023-01-13 17:49:17,476 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:49:17,481 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:49:21,149 WARNING FileStreamThread:55967 [file_stream.py:request_with_retry():672] requests_with_retry encountered retryable exception: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=None). func: <bound method Session.post of <requests.sessions.Session object at 0x7ff124aa63c8>>, args: ('https://api.wandb.ai/files/pmartin1/megan/trash000/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 140, 'content': ['{"system.disk": 64.2, "system.proc.memory.availableMB": 5936.14, "system.memory": 63.8, "system.proc.memory.rssMB": 796.22, "system.proc.memory.percent": 4.86, "system.cpu": 0.54, "system.cpu.0.cpu_percent": 31.01, "system.cpu.1.cpu_percent": 1.77, "system.cpu.2.cpu_percent": 24.52, "system.cpu.3.cpu_percent": 1.9, "system.cpu.4.cpu_percent": 20.79, "system.cpu.5.cpu_percent": 1.83, "system.cpu.6.cpu_percent": 16.98, "system.cpu.7.cpu_percent": 1.57, "system.proc.cpu.threads": 13, "system.network.sent": 7288695.47, "system.network.recv": 9214088.53, "_wandb": true, "_timestamp": 1673628535.686385, "_runtime": 6714.449198}']}}, 'dropped': 0}}
+2023-01-13 17:49:25,689 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:49:32,754 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:49:32,755 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:49:46,439 ERROR   SenderThread:55967 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7ff124bcd518>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/adapters.py", line 450, in send
+    timeout=timeout
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff124bcd518>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/sdk/internal/internal_api.py", line 209, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/philippemartin/opt/miniconda3/envs/megan/lib/python3.6/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff124bcd518>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+2023-01-13 17:49:52,766 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:50:12,777 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:50:32,786 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:50:52,793 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:51:12,803 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:51:32,811 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:51:52,818 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:52:10,508 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:10,686 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:52:10,688 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:10,878 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:52:10,879 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:11,059 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:11,236 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:52:11,238 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:11,423 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:52:11,424 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:11,605 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:11,801 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:52:12,826 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:52:12,827 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:25,729 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:52:28,023 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:52:28,024 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:43,197 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:52:43,199 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:52:55,733 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:52:58,366 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:52:58,367 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:53:13,585 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:53:13,586 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:53:25,735 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:53:28,753 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:53:28,753 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:53:43,920 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:53:43,936 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:53:55,740 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:53:59,132 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:53:59,132 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:54:14,301 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:54:14,302 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:54:25,743 DEBUG   SenderThread:55967 [sender.py:send():303] send: stats
+2023-01-13 17:54:30,056 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:54:30,057 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
+2023-01-13 17:54:45,260 DEBUG   HandlerThread:55967 [handler.py:handle_request():139] handle_request: stop_status
+2023-01-13 17:54:45,260 DEBUG   SenderThread:55967 [sender.py:send_request():317] send_request: stop_status
