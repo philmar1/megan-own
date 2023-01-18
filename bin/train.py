@@ -95,7 +95,7 @@ def train_megan(
     summary(model)
     logger.info("Using device: {}".format(device))
     
-    run = init_wandb()
+    #run = init_wandb()
     if device=='cuda:0':
         show_cache()
     
@@ -115,6 +115,7 @@ def train_megan(
         if train:
             optimizer.zero_grad()
 
+        
         batch_ind = np.random.choice(ind, size=batch_size, replace=False)
         batch_metrics = {}
         batch = generate_batch(batch_ind, data_dict['metadata'], featurizer, data_dict['data'], action_vocab=action_vocab)
@@ -151,7 +152,7 @@ def train_megan(
             path_i += n_paths
         min_losses = torch.cat(min_losses)
 
-        
+        # TODO : del path_loss to free memory ? But can break the torch graph
         loss = torch.mean(min_losses)
 
         if torch.isinf(loss):
@@ -336,7 +337,7 @@ def train_megan(
         all_metrics['lr'] = learning_rate
         tf_callback.on_epoch_end(epoch_i + 1, all_metrics)
         
-        run.log(all_metrics) #step_acc, step_acc_hard, step_acc_easy, acc, loss, lr 
+        #run.log(all_metrics) #step_acc, step_acc_hard, step_acc_easy, acc, loss, lr 
 
         valid_acc = valid_metrics['acc']
         if valid_acc > best_acc:

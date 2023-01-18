@@ -346,4 +346,5 @@ def generate_batch(graph_ind: np.ndarray, metadata: pd.DataFrame, featurizer, da
     target = target.reshape(n_paths, n_max_steps, -1)
     result['target'] = target
 
+    #result = {k:v.to(torch.float16) for k,v in result.items()} #XXX
     return result

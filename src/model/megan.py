@@ -16,7 +16,7 @@ device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 
 def to_one_hot(x, dims: int):
-    one_hot = torch.FloatTensor(*x.shape, dims).zero_().to(device)
+    one_hot = torch.FloatTensor(*x.shape, dims).zero_().to(device) # to(torch.float16) ? XXX
     x = torch.unsqueeze(x, -1)
     target = one_hot.scatter_(x.dim() - 1, x.data, 1)
 
@@ -120,7 +120,7 @@ class Megan(nn.Module):
         state_dict = None
 
         for step_i in range(n_steps):
-            step_batch = dict((k, v[:, step_i]) for k, v in x.items() if v.dim() > 1)
+            step_batch = dict((k, v[:, step_i]) for k, v in x.items() if v.dim() > 1) 
 
             step_results = self.forward_step(step_batch, state_dict=state_dict)
             state_dict = {

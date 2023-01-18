@@ -438,3 +438,66 @@ Raw data should be found at: https://ibm.ent.box.com/v/ReactionSeq2SeqDataset
 2023-01-13 19:13:33,862 - root - DEBUG - Logging configured!
 2023-01-13 19:13:33,863 - src - INFO - Setting random seed to 132435
 2023-01-13 19:13:34,946 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 21:50:00,840 - root - DEBUG - Logging configured!
+2023-01-17 21:50:00,842 - src - INFO - Setting random seed to 132435
+2023-01-17 21:50:02,641 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 22:01:31,402 - root - DEBUG - Logging configured!
+2023-01-17 22:01:31,403 - src - INFO - Setting random seed to 132435
+2023-01-17 22:01:32,963 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 22:07:39,091 - root - DEBUG - Logging configured!
+2023-01-17 22:07:39,093 - src - INFO - Setting random seed to 132435
+2023-01-17 22:07:40,806 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 22:10:18,621 - root - DEBUG - Logging configured!
+2023-01-17 22:10:18,622 - src - INFO - Setting random seed to 132435
+2023-01-17 22:10:20,403 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 22:15:30,408 - root - DEBUG - Logging configured!
+2023-01-17 22:15:30,409 - src - INFO - Setting random seed to 132435
+2023-01-17 22:15:31,965 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 22:18:44,695 - root - DEBUG - Logging configured!
+2023-01-17 22:18:44,696 - src - INFO - Setting random seed to 132435
+2023-01-17 22:18:46,244 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 22:37:21,729 - root - DEBUG - Logging configured!
+2023-01-17 22:37:21,731 - src - INFO - Setting random seed to 132435
+2023-01-17 22:37:23,485 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-17 22:41:50,340 - root - DEBUG - Logging configured!
+2023-01-17 22:41:50,341 - src - INFO - Setting random seed to 132435
+2023-01-17 22:41:52,075 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 13:41:05,741 - root - DEBUG - Logging configured!
+2023-01-18 13:41:05,742 - src - INFO - Setting random seed to 132435
+2023-01-18 13:41:07,433 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 13:47:34,421 - root - DEBUG - Logging configured!
+2023-01-18 13:47:34,422 - src - INFO - Setting random seed to 132435
+2023-01-18 13:47:35,440 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 13:48:45,629 - root - DEBUG - Logging configured!
+2023-01-18 13:48:45,630 - src - INFO - Setting random seed to 132435
+2023-01-18 13:48:46,757 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 13:49:12,661 - root - DEBUG - Logging configured!
+2023-01-18 13:49:12,662 - src - INFO - Setting random seed to 132435
+2023-01-18 13:49:13,721 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 13:54:22,528 - root - DEBUG - Logging configured!
+2023-01-18 13:54:22,529 - src - INFO - Setting random seed to 132435
+2023-01-18 13:54:23,181 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 13:55:48,288 - root - DEBUG - Logging configured!
+2023-01-18 13:55:48,289 - src - INFO - Setting random seed to 132435
+2023-01-18 13:55:48,899 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 13:59:51,547 - root - DEBUG - Logging configured!
+2023-01-18 13:59:51,547 - src - INFO - Setting random seed to 132435
+2023-01-18 13:59:52,135 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 14:00:29,153 - root - DEBUG - Logging configured!
+2023-01-18 14:00:29,153 - src - INFO - Setting random seed to 132435
+2023-01-18 14:00:29,763 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 14:02:09,018 - root - DEBUG - Logging configured!
+2023-01-18 14:02:09,019 - src - INFO - Setting random seed to 132435
+2023-01-18 14:02:09,650 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 21:14:44,471 - root - DEBUG - Logging configured!
+2023-01-18 21:14:44,472 - src - INFO - Setting random seed to 132435
+2023-01-18 21:14:45,324 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 21:15:09,762 - root - DEBUG - Logging configured!
+2023-01-18 21:15:09,763 - src - INFO - Setting random seed to 132435
+2023-01-18 21:15:10,430 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 21:16:13,290 - root - DEBUG - Logging configured!
+2023-01-18 21:16:13,290 - src - INFO - Setting random seed to 132435
+2023-01-18 21:16:13,947 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin
+2023-01-18 21:16:47,396 - root - DEBUG - Logging configured!
+2023-01-18 21:16:47,396 - src - INFO - Setting random seed to 132435
+2023-01-18 21:16:48,049 - src.utils.dispatch_utils - INFO - Parsed gin config from /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/configs/uspto_50k_v2.gin

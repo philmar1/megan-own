@@ -1087,3 +1087,540 @@ init_wandb.id = trash000
 2023-01-13 19:13:39,318 - __main__ - INFO - Loading data
 2023-01-13 19:13:40,241 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
 2023-01-13 19:13:40,241 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 21:50:02,649 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 21:50:02,657 - __main__ - INFO - Creating model...
+2023-01-17 21:50:02,751 - __main__ - INFO - Using device: cpu
+2023-01-17 21:50:09,050 - __main__ - INFO - Loading data...
+2023-01-17 21:50:09,051 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 21:50:09,054 - __main__ - INFO - Loading data
+2023-01-17 21:50:10,005 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 21:50:10,006 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:01:32,972 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 22:01:32,979 - __main__ - INFO - Creating model...
+2023-01-17 22:01:33,062 - __main__ - INFO - Using device: cpu
+2023-01-17 22:01:47,145 - __main__ - INFO - Loading data...
+2023-01-17 22:01:47,146 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 22:01:47,149 - __main__ - INFO - Loading data
+2023-01-17 22:01:48,098 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 22:01:48,100 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:01:48,106 - __main__ - WARNING - Exception while running batch: module 'torch' has no attribute 'autocast'
+2023-01-17 22:07:40,814 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 22:07:40,822 - __main__ - INFO - Creating model...
+2023-01-17 22:07:40,919 - __main__ - INFO - Using device: cpu
+2023-01-17 22:07:47,528 - __main__ - INFO - Loading data...
+2023-01-17 22:07:47,528 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 22:07:47,531 - __main__ - INFO - Loading data
+2023-01-17 22:07:48,477 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 22:07:48,477 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:07:48,483 - __main__ - WARNING - Exception while running batch: module 'torch.cuda' has no attribute 'amp'
+2023-01-17 22:10:20,411 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 22:10:20,418 - __main__ - INFO - Creating model...
+2023-01-17 22:10:20,509 - __main__ - INFO - Using device: cpu
+2023-01-17 22:10:27,812 - __main__ - INFO - Loading data...
+2023-01-17 22:10:27,813 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 22:10:27,816 - __main__ - INFO - Loading data
+2023-01-17 22:10:28,818 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 22:10:28,818 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:10:28,825 - __main__ - WARNING - Exception while running batch: module 'torch' has no attribute 'cpu'
+2023-01-17 22:15:31,973 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 22:15:31,980 - __main__ - INFO - Creating model...
+2023-01-17 22:15:32,108 - __main__ - INFO - Using device: cpu
+2023-01-17 22:15:38,809 - __main__ - INFO - Loading data...
+2023-01-17 22:15:38,810 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 22:15:38,813 - __main__ - INFO - Loading data
+2023-01-17 22:15:39,743 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 22:15:39,743 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:15:39,809 - __main__ - WARNING - Exception while running batch: Expected object of scalar type Float but got scalar type Half for argument #2 'mat2' in call to _th_mm
+2023-01-17 22:18:46,254 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 22:18:46,261 - __main__ - INFO - Creating model...
+2023-01-17 22:18:46,396 - __main__ - INFO - Using device: cpu
+2023-01-17 22:18:54,162 - __main__ - INFO - Loading data...
+2023-01-17 22:18:54,162 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 22:18:54,166 - __main__ - INFO - Loading data
+2023-01-17 22:18:55,130 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 22:18:55,131 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:18:55,172 - __main__ - WARNING - Exception while running batch: Expected object of scalar type Long but got scalar type Half for argument #3 'index' in call to _th_scatter_
+2023-01-17 22:37:23,494 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 22:37:23,502 - __main__ - INFO - Creating model...
+2023-01-17 22:37:23,630 - __main__ - INFO - Using device: cpu
+2023-01-17 22:37:33,889 - __main__ - INFO - Loading data...
+2023-01-17 22:37:33,889 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 22:37:33,893 - __main__ - INFO - Loading data
+2023-01-17 22:37:34,897 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 22:37:34,898 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:37:34,924 - __main__ - WARNING - Exception while running batch: 'builtin_function_or_method' object is not iterable
+2023-01-17 22:41:52,083 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-17 22:41:52,089 - __main__ - INFO - Creating model...
+2023-01-17 22:41:52,220 - __main__ - INFO - Using device: cpu
+2023-01-17 22:42:01,511 - __main__ - INFO - Loading data...
+2023-01-17 22:42:01,512 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-17 22:42:01,515 - __main__ - INFO - Loading data
+2023-01-17 22:42:02,457 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-17 22:42:02,459 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-17 22:42:02,488 - __main__ - WARNING - Exception while running batch: Expected object of scalar type Long but got scalar type Half for argument #3 'index' in call to _th_scatter_
+2023-01-18 13:41:07,442 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-18 13:41:07,448 - __main__ - INFO - Creating model...
+2023-01-18 13:41:07,536 - __main__ - INFO - Using device: cpu
+2023-01-18 13:41:07,537 - __main__ - INFO - Loading data...
+2023-01-18 13:41:07,537 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-18 13:41:07,540 - __main__ - INFO - Loading data
+2023-01-18 13:41:08,380 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-18 13:41:08,380 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-18 13:47:35,448 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-18 13:47:35,454 - __main__ - INFO - Creating model...
+2023-01-18 13:47:35,572 - __main__ - INFO - Using device: cpu
+2023-01-18 13:47:35,572 - __main__ - INFO - Loading data...
+2023-01-18 13:47:35,572 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-18 13:47:35,575 - __main__ - INFO - Loading data
+2023-01-18 13:47:36,365 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-18 13:47:36,365 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-18 13:47:40,767 - __main__ - WARNING - Exception while running batch: Expected object of scalar type Long but got scalar type Half for argument #3 'index' in call to _th_scatter_
+2023-01-18 13:48:46,764 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-18 13:48:46,768 - __main__ - INFO - Creating model...
+2023-01-18 13:48:46,895 - __main__ - INFO - Using device: cpu
+2023-01-18 13:48:46,895 - __main__ - INFO - Loading data...
+2023-01-18 13:48:46,896 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-18 13:48:46,898 - __main__ - INFO - Loading data
+2023-01-18 13:48:47,774 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-18 13:48:47,774 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-18 13:49:13,729 - src.utils.dispatch_utils - INFO - gin-bound config values:
+get_dataset.dataset_key = uspto_50k
+train_megan.featurizer_key = megan_16_bfs_randat
+train_megan.max_n_epochs = 200
+train_megan.train_samples_per_epoch = 10000
+train_megan.valid_samples_per_epoch = 5000
+train_megan.batch_size = 2
+train_megan.learning_rate = 0.0001
+train_megan.gen_lr_factor = 0.05
+train_megan.gen_lr_patience = 6
+train_megan.early_stopping = 16
+train_megan.start_epoch = 0
+train_megan.megan_warmup_epochs = 1
+Megan.reaction_type_given = False
+Megan.bond_emb_dim = 32
+Megan.hidden_dim = 1024
+Megan.stateful = True
+Megan.n_reaction_types = 10
+Megan.reaction_type_emb_dim = 16
+Megan.atom_feature_keys = ['is_supernode', 'atomic_num', 'formal_charge', 'chiral_tag', 'num_explicit_hs', 'is_aromatic']
+Megan.bond_feature_keys = ['bond_type', 'bond_stereo']
+MeganEncoder.n_encoder_conv = 4
+MeganEncoder.enc_residual = True
+MeganEncoder.enc_dropout = 0.3
+MeganDecoder.n_decoder_conv = 2
+MeganDecoder.dec_residual = True
+MeganDecoder.n_fc = 2
+MeganDecoder.atom_fc_hidden_dim = 128
+MeganDecoder.bond_fc_hidden_dim = 128
+MeganDecoder.bond_atom_dim = 128
+MeganDecoder.dec_dropout = 0.3
+MultiHeadGraphConvLayer.att_heads = 8
+MultiHeadGraphConvLayer.att_dim = 128
+MultiHeadGraphConvLayer.v2 = True
+init_wandb.project = megan
+init_wandb.name = trash
+init_wandb.id = trash000
+2023-01-18 13:49:13,735 - __main__ - INFO - Creating model...
+2023-01-18 13:49:13,853 - __main__ - INFO - Using device: cpu
+2023-01-18 13:49:13,854 - __main__ - INFO - Loading data...
+2023-01-18 13:49:13,854 - __main__ - INFO - Training for maximum of 200 epochs...
+2023-01-18 13:49:13,857 - __main__ - INFO - Loading data
+2023-01-18 13:49:14,634 - __main__ - INFO - Training on chunk of 39934 training samples and 4992 valid samples
+2023-01-18 13:49:14,635 - __main__ - INFO - Starting training on epoch 1 with Learning Rate=0.0 (1 warmup epochs)
+2023-01-18 13:49:16,629 - __main__ - WARNING - Exception while running batch: _th_scatter_ not supported on CPUType for Half

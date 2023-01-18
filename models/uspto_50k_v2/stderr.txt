@@ -166,4 +166,84 @@ wandb: Run `wandb offline` to turn off syncing.
 wandb: Resuming run trash
 wandb:  View project at https://wandb.ai/pmartin1/megan
 wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
-models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_215006-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: - Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_220140-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_220744-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_221024-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_221536-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_221850-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_223729-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+wandb: Currently logged in as: pmartin1. Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: | Waiting for wandb.init()...wandb: / Waiting for wandb.init()...wandb: wandb version 0.13.9 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.7
+wandb: Run data is saved locally in /Users/philippemartin/Documents/projets_IA/Drug Discovery/megan/wandb/run-20230117_224156-trash000
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Resuming run trash
+wandb:  View project at https://wandb.ai/pmartin1/megan
+wandb:  View run at https://wandb.ai/pmartin1/megan/runs/trash000
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:04<?, ?it/s]
+models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:00<?, ?it/s]models/uspto_50k_v2 train epoch 1:   0%|          | 0/5000 [00:01<?, ?it/s]
